@@ -1,0 +1,87 @@
+.font-card1{
+    font-size: 12px;
+}
+
+.span-box{
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+}
+
+
+.content-why{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.testi-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+
+
+.footer .logo-footer img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* responsive in bottom */
+
+@media only screen and (max-width: 600px) {
+    .content-why{
+
+        width: 100%;
+        display: block;
+        margin-left: 25px;
+
+    }
+
+    .testi-section{
+        display: block;
+        margin-left: 25px;
+    }
+
+
+    .our-team{
+        display: block;
+        margin-left: 25px;
+    }
+
+    .footer {
+        display: block;
+
+    }
+
+    .footer-perusahaan{
+        margin-top: 20px;
+    }
+
+    .footer-komunitas{
+        margin-top: 20px;
+    }
+
+    .footer-tautan {
+        margin-top: 20px;
+    }
+
+}
