@@ -16,8 +16,12 @@ use App\Http\Controllers\PelajarController;
 use App\Http\Controllers\PengajarController;
 use App\Http\Controllers\PhpController;
 use App\Http\Controllers\ReactController;
+use App\Http\Controllers\ReactNativeController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\VueController;
+use App\Http\Controllers\CssController;
+use App\Http\Controllers\HtmlController;
+use App\Http\Controllers\AndroidJavaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,29 +41,25 @@ Route::get('/', function () {
 
 
 
-Route::get('/login',[LoginController::class, 'index'])->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
-Route::post('/login',[LoginController::class, 'postLogin'])->name('login');
+Route::post('/login', [LoginController::class, 'postLogin'])->name('login');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/register',[RegisterController::class, 'index'])->name('register');
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
-Route::post('/register',[RegisterController::class, 'postRegister'])->name('register.postRegister');
-
-
-
-Route::group(['middleware' => 'auth','checkLevel:admin'], function(){
+Route::post('/register', [RegisterController::class, 'postRegister'])->name('register.postRegister');
 
 
 
-
+Route::group(['middleware' => 'auth', 'checkLevel:admin'], function () {
 });
 
 
 
 
-Route::get('/about',[AboutController::class, 'index'])->name('about');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 
 // crud pelajar
@@ -73,14 +73,12 @@ Route::get('/about',[AboutController::class, 'index'])->name('about');
 
 // lp user
 
-Route::group(['middleware' => 'auth','checkLevel:user'], function(){
-
-
+Route::group(['middleware' => 'auth', 'checkLevel:user'], function () {
 });
 
 
 
-Route::get('/admin',[AdminController::class, 'index'])->name('admin');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 // halaman admin crud kelas
 
 
@@ -88,18 +86,18 @@ Route::get('/admin',[AdminController::class, 'index'])->name('admin');
 
 Route::get('/admin/kelas', [KelasController::class, 'index'])->name('kelas');
 
-Route::post('/admin/kelas/tambahKelas',[KelasController::class, 'store'])->name('kelas.store');
+Route::post('/admin/kelas/tambahKelas', [KelasController::class, 'store'])->name('kelas.store');
 
 Route::get('/admin/kelas/edit/{kelas}', [KelasController::class, 'edit'])->name('kelas.edit');
 
-Route::put('/admin/kelas/update',[KelasController::class, 'update'])->name('kelas.update');
+Route::put('/admin/kelas/update', [KelasController::class, 'update'])->name('kelas.update');
 
-Route::delete('/admin/kelas/delete/{kelas}',[KelasController::class, 'destroy'])->name('kelas.delete');
+Route::delete('/admin/kelas/delete/{kelas}', [KelasController::class, 'destroy'])->name('kelas.delete');
 
 
 // halaman admin crud pengajar
 
-Route::get('/admin/pengajar',[PengajarController::class, 'index'])->name('pengajar');
+Route::get('/admin/pengajar', [PengajarController::class, 'index'])->name('pengajar');
 
 Route::post('/admin/pengajar/tambah', [PengajarController::class, 'store'])->name('pengajar.store');
 
@@ -111,19 +109,23 @@ Route::delete('/admin/pengajar/delete/{pengajar}', [PengajarController::class, '
 
 Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.user');
 
-Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 
 
-Route::get('halaman/user/kelas/{kelas}',[PageUserController::class,'show'])->name('halaman.user.kelas');
+Route::get('halaman/user/kelas/{kelas}', [PageUserController::class, 'show'])->name('halaman.user.kelas');
 
 
 Route::get('kelas/pyton', [KelasPythonController::class, 'index'])->name('piton');
-Route::get('/kelas/flutter',[FlutterController::class, 'index'])->name('flutter');
-Route::get('/kelas/php',[PhpController::class, 'index'])->name('php');
+Route::get('/kelas/flutter', [FlutterController::class, 'index'])->name('flutter');
+Route::get('/kelas/php', [PhpController::class, 'index'])->name('php');
 Route::get('/kelas/codeigniter', [CiController::class, 'index'])->name('ci');
 Route::get('/kelas/laravel', [LaravelController::class, 'index'])->name('laravel');
 Route::get('/kelas/javascript', [JsController::class, 'index'])->name('js');
 Route::get('/kelas/vuejs', [VueController::class, 'index'])->name('vue');
-Route::get('kelas/reactjs',[ReactController::class, 'index'])->name('react');
+Route::get('/kelas/reactjs', [ReactController::class, 'index'])->name('react');
+Route::get('/kelas/reactnative', [ReactNativeController::class, 'index'])->name('reactnative');
+Route::get('/kelas/css', [CssController::class, 'index'])->name('css');
+Route::get('/kelas/html', [HtmlController::class, 'index'])->name('html');
+Route::get('/kelas/androidjava', [AndroidJavaController::class, 'index'])->name('androidjava');

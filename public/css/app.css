@@ -1,15 +1,95 @@
-.font-card1{
+:root {
+    --black-100: #050D18;
+    --black-80: #363D46;
+    --black-50: #82868B;
+    --black-30: #B4B6B9;
+    --black-10: #E6E6E7;
+    --white-primary: #FFFFFF;
+    --white-secondary: #F8F9FA;
+    --primary-100: #2541D7;
+    --primary-80: #5066DF;
+    --primary-50: #92A0EB;
+    --primary-30: #BDC6F3;
+    --primary-10: #E9ECFB;
+    --success-80: #4CD3AB;
+    --success-50: #8FE4CB;
+    --success-30: #BCEEDF;
+    --success-10: #E8F9F4;
+    --warning-80: #FFCD38;
+    --warning-50: #FFE083;
+    --warning-30: #FFECB4;
+    --warning-10: #FFF8E6;
+    --alert-80: #E35D6A;
+    --alert-50: #ED9AA2;
+    --alert-30: #F4C2C7;
+    --alert-10: #FBEAEC;
+
+}
+
+/* font material icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+nav {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* custom css */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-card1 {
     font-size: 12px;
 }
 
-.span-box{
+.span-box {
     width: 10px;
     height: 10px;
     background-color: greenyellow;
 }
 
 
-.content-why{
+.content-why {
 
     width: 100%;
     display: flex;
@@ -18,12 +98,12 @@
 
 }
 
-.testi-section{
+.testi-section {
     display: flex;
     justify-content: space-around;
 }
 
-.our-team{
+.our-team {
     display: flex;
     justify-content: space-between;
 }
@@ -34,21 +114,114 @@
     justify-content: space-around;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-
-.footer .logo-footer img{
+.footer .logo-footer img {
     width: 150px;
     height: 150px;
 }
 
+/* css sidebar user */
+.logo {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.poppins-16-medium {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 0;
+}
+
+.poppins-14-semibold {
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--black-80);
+}
+
+.menu-active {
+    color: var(--primary-100);
+}
+
+/* penutup sidebar */
+
+/* page user css */
+.body-user {
+    background-color: var(--white-secondary);
+    padding: 100px 0 150px 0;
+    height: auto;
+}
+
+.col-3 a {
+    text-decoration: none;
+}
+
+.judul-card {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-100);
+}
+
+.mentor-text-card {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black-100);
+}
+
+.status-kelas {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--black-80);
+}
+
+.card {
+    transition: 0.5s;
+}
+
+.card:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+/* penutup my course */
+
+/* style di kelas */
+.head-card-tools {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-100);
+}
+
+.download-card-tools {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black-80);
+}
+
+/* penutup */
 
 /* responsive in bottom */
 
 @media only screen and (max-width: 600px) {
-    .content-why{
+    .content-why {
 
         width: 100%;
         display: block;
@@ -56,13 +229,13 @@ h1,h2,h3,h4,h5,h6{
 
     }
 
-    .testi-section{
+    .testi-section {
         display: block;
         margin-left: 25px;
     }
 
 
-    .our-team{
+    .our-team {
         display: block;
         margin-left: 25px;
     }
@@ -72,11 +245,11 @@ h1,h2,h3,h4,h5,h6{
 
     }
 
-    .footer-perusahaan{
+    .footer-perusahaan {
         margin-top: 20px;
     }
 
-    .footer-komunitas{
+    .footer-komunitas {
         margin-top: 20px;
     }
 
