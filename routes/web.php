@@ -123,6 +123,8 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('halaman/user/kelas/{kelas}', [PageUserController::class, 'show'])->name('halaman.user.kelas');
 
 
+Route::get('halaman/user', [PageUserController::class, 'index'])->name('user');
+Route::get('kelas/pyton', [KelasPythonController::class, 'index'])->name('piton');
 Route::get('kelas/pyton', [KelasPythonController::class, 'index'])->name('piton');
 Route::get('/kelas/flutter', [FlutterController::class, 'index'])->name('flutter');
 Route::get('/kelas/php', [PhpController::class, 'index'])->name('php');
@@ -143,9 +145,9 @@ Route::post('/contact/sendMessage', [ContactController::class, 'store'])->name('
 
 // login admin
 
- Route::get('/login/admin', [AdminLoginController::class, 'index'])->name('adminLogin');
+Route::get('/login/admin', [AdminLoginController::class, 'index'])->name('adminLogin');
 // Route::post('/login/admin/berhasil', [AdminLoginController::class, 'postLogin'])->name('adminLogin.postLogin');
- Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('registerAdmin');
+Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('registerAdmin');
 // Route::post('/register/admin/register', [AdminRegisterController::class, 'postRegister'])->name('registerAdmin.register');
 
 

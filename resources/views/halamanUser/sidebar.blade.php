@@ -1,6 +1,6 @@
 <ul class="nav flex-column mt-4">
     <li class="nav-link mb-3">
-        <div class="logo text-xl-center">
+        <div class="logo-sidebar text-xl-center">
             ITCourse
         </div>
     </li>
@@ -15,8 +15,8 @@
         </div>
     </li>
     <li class="nav-item mt-3">
-        <a class="nav-link" href="#">
-            <div class="d-flex flex-row bd-highlight">
+        <a class="nav-link" href="{{ route('user') }}">
+            <div class="d-flex flex-row bd-highlight menu-active">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">home</span>
                 </div>
@@ -28,6 +28,7 @@
     </li>
     {{-- <li class="nav-item">
         <a class="nav-link" href="#">
+
             <div class="d-flex flex-row bd-highlight menu-active">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">school</span>
@@ -63,7 +64,7 @@
         </a>
     </li> --}}
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Yakin ?')">
+        <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Apakah Anda Yakin?')">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">logout</span>

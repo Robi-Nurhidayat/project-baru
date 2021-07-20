@@ -11,14 +11,17 @@
     --primary-50: #92A0EB;
     --primary-30: #BDC6F3;
     --primary-10: #E9ECFB;
+    --success-100: #20C997;
     --success-80: #4CD3AB;
     --success-50: #8FE4CB;
     --success-30: #BCEEDF;
     --success-10: #E8F9F4;
+    --warning-100: #FFC107;
     --warning-80: #FFCD38;
     --warning-50: #FFE083;
     --warning-30: #FFECB4;
     --warning-10: #FFF8E6;
+    --alert-100: #DC3545;
     --alert-80: #E35D6A;
     --alert-50: #ED9AA2;
     --alert-30: #F4C2C7;
@@ -38,6 +41,14 @@
         url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
         url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -72,14 +83,22 @@ nav {
     font-feature-settings: 'liga';
 }
 
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
 /* custom css */
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-.font-card1 {
-    font-size: 12px;
+.body-user-container {
+    background-color: var(--white-secondary);
+}
+
+.body-page {
+    background-color: var(--white-secondary);
 }
 
 .span-box {
@@ -88,14 +107,10 @@ nav {
     background-color: greenyellow;
 }
 
-
 .content-why {
-
     width: 100%;
     display: flex;
-    justify-content: space-around;
-
-
+    justify-content: center;
 }
 
 .testi-section {
@@ -114,6 +129,11 @@ nav {
     justify-content: space-around;
 }
 
+.footer-jumbotron a {
+    text-decoration: none;
+    color: var(--black-100);
+}
+
 h1,
 h2,
 h3,
@@ -123,13 +143,270 @@ h6 {
     font-weight: bold;
 }
 
-.footer .logo-footer img {
-    width: 150px;
-    height: 150px;
+/* custom css bootstrap */
+.btn-primary {
+    background-color: var(--primary-100);
 }
 
+.btn-primary:hover {
+    background-color: #2137b6;
+}
+
+/* akhir custom bootstrap */
+
+/* navbar */
+.main-navbar {
+    background-color: var(--white-primary);
+    box-shadow: 0 0 50px #ccc;
+    font-weight: 600;
+    color: var(--black-80);
+}
+
+.login-button a {
+    font-weight: 600;
+    color: var(--black-80);
+}
+
+.signup-button a {
+    font-weight: 600;
+    color: var(--white-secondary) !important;
+}
+
+.logo-navbar {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--success-100) !important;
+}
+
+.ul-button {
+    margin-left: 90px;
+}
+
+.col-menu a:hover {
+    color: var(--primary-100);
+}
+
+.btn-login a:hover {
+    background-color: var(--black-10);
+    transition: all 0.5s;
+}
+
+/* penutup navbar */
+
+/* home style */
+.hero {
+    background-color: var(--white-secondary);
+}
+
+.hero a {
+    font-weight: 600;
+    padding: 10px 45px;
+}
+
+.roboto-24-reguler {
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.roboto-18-medium {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.roboto-14-reguler {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.roboto-16-medium {
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.card-pricing-main {
+    background-color: var(--primary-100);
+}
+
+.text-pricing {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.roboto-pricing-medium {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.roboto-free-pricing-reguler,
+.roboto-premium-pricing-reguler {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.roboto-free-pricing-reguler {
+    color: var(--black-80);
+}
+
+.roboto-premium-pricing-reguler {
+    color: var(--white-primary);
+}
+
+.free-pricing-card {
+    background-color: var(--white-primary);
+    color: var(--black-100);
+}
+
+.premium-pricing-card {
+    background-color: var(--primary-100);
+    color: var(--white-primary);
+}
+
+.icon-primary box-icon {
+    color: var(--primary-100) !important;
+}
+
+.btn-course-white {
+    color: var(--black-100);
+    background-color: var(--white-primary);
+}
+
+.pricing-button-primary {
+    margin-top: 175px;
+}
+
+.backgroud-primary {
+    background-color: var(--primary-100);
+    padding: 50px 0px;
+}
+
+.roboto-18-bold {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.roboto-14-bold {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.roboto-12-reguler {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.roboto-12-medium {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.border-black {
+    border: 1px solid var(--black-100);
+}
+
+.testimonial-text::before {
+    content: '"';
+}
+
+.testimonial-text::after {
+    content: '"';
+}
+
+.poppins-18-bold {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.poppins-36-bold {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.background-offer-image {
+    background-image: url("/img/home/tawaran.jpg");
+    background-size: cover;
+}
+
+.background-offer-image img {
+    background-size: cover;
+}
+
+.footer-jumbotron {
+    margin: 100px 0 0 0;
+}
+
+.roboto-14-medium {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#pricing {
+    transition: 1s all;
+    scroll-behavior: smooth;
+}
+
+/* penutup home style */
+
+/* about style */
+.header-poppins-48 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.poppins-14-bold {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-transparent {
+    background-color: var(--white-secondary);
+    border: none;
+}
+
+.socmed a {
+    text-decoration: none;
+    color: var(--black-50);
+}
+
+.poppins-18-semibold {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+}
+
+.poppins-18-reguler {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: var(--black-50);
+}
+
+/* penutup about */
+
 /* css sidebar user */
-.logo {
+.sidebar a:hover {
+    color: var(--primary-100);
+}
+
+.logo-sidebar {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 18px;
@@ -167,6 +444,10 @@ h6 {
     height: auto;
 }
 
+.body-user a {
+    text-decoration: none;
+}
+
 .col-3 a {
     text-decoration: none;
 }
@@ -192,11 +473,11 @@ h6 {
     color: var(--black-80);
 }
 
-.card {
+.card-kelas {
     transition: 0.5s;
 }
 
-.card:hover {
+.card-kelas:hover {
     transition: 0.5s;
     transform: scale(1.05);
 }
@@ -216,7 +497,7 @@ h6 {
     color: var(--black-80);
 }
 
-/* penutup */
+/* kelas */
 
 /* responsive in bottom */
 
@@ -260,7 +541,7 @@ h6 {
 }
 
 
-.contact-img{
+.contact-img {
     display: flex;
 
     justify-content: space-around;
