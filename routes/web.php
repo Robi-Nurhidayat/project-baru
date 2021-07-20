@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\AdminRegisterController;
 use App\Http\Controllers\CiController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\FlutterController;
@@ -131,3 +133,13 @@ Route::get('/kelas/css', [CssController::class, 'index'])->name('css');
 Route::get('/kelas/html', [HtmlController::class, 'index'])->name('html');
 Route::get('/kelas/androidjava', [AndroidJavaController::class, 'index'])->name('androidjava');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+
+
+
+// login admin
+
+ Route::get('/login/admin', [AdminLoginController::class, 'index'])->name('adminLogin');
+// Route::post('/login/admin/berhasil', [AdminLoginController::class, 'postLogin'])->name('adminLogin.postLogin');
+ Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('registerAdmin');
+// Route::post('/register/admin/register', [AdminRegisterController::class, 'postRegister'])->name('registerAdmin.register');

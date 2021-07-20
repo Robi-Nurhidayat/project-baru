@@ -4,11 +4,9 @@
 <div class="jumbotron ml-auto bg-light mx-5" style="height: 70vh; width:80%; margin-top: 100px;">
     <div class="row">
         <div class="col-md-6 col-12">
-            <h1>Login</h1>
-            <h5>Belum punya akun ? <a href="{{ route('register') }}">Sign Up</a></h5>
-            <p>Login Sebagai <a href="{{ route('adminLogin') }}">Admin</a></p>
-
-            <form action="{{ route('login') }}" method="POST">
+            <a href="{{ route('registerAdmin') }}" class="btn btn-primary">Daftar</a>
+            <h1>Login Admin</h1>
+            <form action="{{ route('admin') }}" method="GET">
                 @csrf
 
                   <div class="form-group">
