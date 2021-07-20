@@ -15,37 +15,13 @@
         </div>
     </li>
     <li class="nav-item mt-3">
-        <a class="nav-link" href="#">
-            <div class="d-flex flex-row bd-highlight">
+        <a class="nav-link" href="">
+            <div class="d-flex flex-row bd-highlight menu-active">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">home</span>
                 </div>
                 <div class="p-1 bd-highlight">
                     <span class="poppins-16-medium">Home</span>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <div class="d-flex flex-row bd-highlight menu-active">
-                <div class="p-1 bd-highlight">
-                    <span class="material-icons">school</span>
-                </div>
-                <div class="p-1 bd-highlight">
-                    <span class="poppins-16-medium">My Course</span>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <div class="d-flex flex-row bd-highlight">
-                <div class="p-1 bd-highlight">
-                    <span class="material-icons">book</span>
-                </div>
-                <div class="p-1 bd-highlight">
-                    <span class="poppins-16-medium">Course List</span>
                 </div>
             </div>
         </a>
@@ -63,7 +39,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Yakin ?')">
+        <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Apakah Anda Yakin?')">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">logout</span>

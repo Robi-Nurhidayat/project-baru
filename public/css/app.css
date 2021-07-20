@@ -43,6 +43,10 @@
         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     z-index: 2;
     margin: 0;
@@ -81,12 +85,12 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 
-.body-page {
+.body-user-container {
     background-color: var(--white-secondary);
 }
 
-.font-card1 {
-    font-size: 12px;
+.body-page {
+    background-color: var(--white-secondary);
 }
 
 .span-box {
@@ -95,14 +99,10 @@ nav {
     background-color: greenyellow;
 }
 
-
 .content-why {
-
     width: 100%;
     display: flex;
-    justify-content: space-around;
-
-
+    justify-content: center;
 }
 
 .testi-section {
@@ -128,11 +128,6 @@ h4,
 h5,
 h6 {
     font-weight: bold;
-}
-
-.footer .logo-footer img {
-    width: 150px;
-    height: 150px;
 }
 
 /* custom css bootstrap */
@@ -186,7 +181,7 @@ h6 {
 
 /* penutup navbar */
 
-/* body hero */
+/* home style */
 .hero {
     background-color: var(--white-secondary);
 }
@@ -202,10 +197,154 @@ h6 {
     font-weight: 400;
 }
 
+.roboto-18-medium {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
 
-/* penutup body hero */
+.roboto-14-reguler {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.roboto-16-medium {
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.card-pricing-main {
+    background-color: var(--primary-100);
+}
+
+.text-pricing {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.roboto-pricing-medium {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.roboto-free-pricing-reguler,
+.roboto-premium-pricing-reguler {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.roboto-free-pricing-reguler {
+    color: var(--black-80);
+}
+
+.roboto-premium-pricing-reguler {
+    color: var(--white-primary);
+}
+
+.free-pricing-card {
+    background-color: var(--white-primary);
+    color: var(--black-100);
+}
+
+.premium-pricing-card {
+    background-color: var(--primary-100);
+    color: var(--white-primary);
+}
+
+.icon-primary box-icon {
+    color: var(--primary-100) !important;
+}
+
+.btn-course-white {
+    color: var(--black-100);
+    background-color: var(--white-primary);
+}
+
+.pricing-button-primary {
+    margin-top: 175px;
+}
+
+.backgroud-primary {
+    background-color: var(--primary-100);
+    padding: 50px 0px;
+}
+
+.roboto-18-bold {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.roboto-14-bold {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.roboto-12-reguler {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.roboto-12-medium {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.border-black {
+    border: 1px solid var(--black-100);
+}
+
+.testimonial-text::before {
+    content: '"';
+}
+
+.testimonial-text::after {
+    content: '"';
+}
+
+.poppins-18-bold {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.poppins-36-bold {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.background-offer-image {
+    background-image: url("/img/home/tawaran.jpg");
+    background-size: cover;
+}
+
+.background-offer-image img {
+    background-size: cover;
+}
+
+.footer-jumbotron {
+    margin: 100px 0 0 0;
+}
+
+.roboto-14-medium {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* penutup home style */
 
 /* css sidebar user */
+.sidebar a:hover {
+    color: var(--primary-100);
+}
+
 .logo-sidebar {
     font-family: 'Poppins';
     font-weight: 700;
@@ -244,6 +383,10 @@ h6 {
     height: auto;
 }
 
+.body-user a {
+    text-decoration: none;
+}
+
 .col-3 a {
     text-decoration: none;
 }
@@ -269,11 +412,11 @@ h6 {
     color: var(--black-80);
 }
 
-.card {
+.card-kelas {
     transition: 0.5s;
 }
 
-.card:hover {
+.card-kelas:hover {
     transition: 0.5s;
     transform: scale(1.05);
 }
@@ -334,4 +477,11 @@ h6 {
         margin-top: 20px;
     }
 
+}
+
+
+.contact-img {
+    display: flex;
+
+    justify-content: space-around;
 }

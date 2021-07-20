@@ -28,14 +28,14 @@
             </div>
             <div class="p-2 bd-highlight">
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
               </li>
             </div>
           </ul>
         </div>
       </div>
 
-      <div class="col-sm-1 ml-md-5 login-button">
+      <div class="col-sm-1 login-button">
         <ul class="navbar-nav ul-button">
           <div class="p-2 bd-highlight btn-login">
             <li class="nav-item">

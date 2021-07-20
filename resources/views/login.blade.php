@@ -6,6 +6,8 @@
         <div class="col-md-6 col-12">
             <h1>Login</h1>
             <h5>Belum punya akun ? <a href="{{ route('register') }}">Sign Up</a></h5>
+            <p>Login Sebagai <a href="{{ route('adminLogin') }}">Admin</a></p>
+
             <form action="{{ route('login') }}" method="POST">
                 @csrf
 
