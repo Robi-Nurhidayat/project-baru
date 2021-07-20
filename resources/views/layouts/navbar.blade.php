@@ -9,7 +9,7 @@
         <a class="nav-link" href="">Course</a>
         <a class="nav-link" href="#">Pricing</a>
         <a class="nav-link" href="{{ route('about') }}">About</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
         <a href="{{ route('login') }}" class="btn btn-outline-secondary mr-3 ml-3">Login</a>
         <a href="{{ route('register') }}" class="btn btn-primary">Sign Up</a>
       </div>

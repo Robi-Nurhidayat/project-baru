@@ -22,6 +22,7 @@ use App\Http\Controllers\VueController;
 use App\Http\Controllers\CssController;
 use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\AndroidJavaController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -129,3 +130,4 @@ Route::get('/kelas/reactnative', [ReactNativeController::class, 'index'])->name(
 Route::get('/kelas/css', [CssController::class, 'index'])->name('css');
 Route::get('/kelas/html', [HtmlController::class, 'index'])->name('html');
 Route::get('/kelas/androidjava', [AndroidJavaController::class, 'index'])->name('androidjava');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');

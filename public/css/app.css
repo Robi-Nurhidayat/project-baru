@@ -258,3 +258,10 @@ h6 {
     }
 
 }
+
+
+.contact-img{
+    display: flex;
+
+    justify-content: space-around;
+}
