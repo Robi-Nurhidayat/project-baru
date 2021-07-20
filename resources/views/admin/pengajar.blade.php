@@ -37,7 +37,7 @@
             <td>{{ $p->usia }}</td>
             <td>{{ $p->alamat }}</td>
             <td>{{ $p->kelas }}</td>
-            <td><img src="{{ asset('storage/movies/'. $p->images) }}" alt="" style="width: 70px; height:70px;"></td>
+            <td><img src="{{ asset('storage/img/users/'. $p->images) }}" alt="" style="width: 70px; height:70px;"></td>
             <td>
                 <a href="{{ route('pengajar.edit',$p->id) }}" class="btn btn-outline-success">Edit</a>
             </td>

@@ -25,7 +25,9 @@ use App\Http\Controllers\CssController;
 use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\AndroidJavaController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TampilPesanContact;
+use App\Http\Controllers\TampilUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -150,3 +152,19 @@ Route::post('/contact/sendMessage', [ContactController::class, 'store'])->name('
 // pesan user
 
 Route::get('/admin/pesan', [TampilPesanContact::class, 'index'])->name('tampilPesanUser');
+
+
+
+// tampil user controller
+
+Route::get('/admin/user/tampil', [TampilUserController::class, 'index'])->name('tampilUserAdmin');
+Route::get('/admin/user/edit/{user}', [TampilUserController::class, 'edit'])->name('editUserAdmin');
+Route::put('/admin/user/update', [TampilUserController::class, 'update'])->name('updateUserAdmin');
+Route::delete('/admin/user/delete/{user}', [TampilUserController::class, 'destroy'])->name('deleteUserAdmin');
+
+
+// setting user
+
+Route::get('/halaman/user/setting/', [SettingController::class, 'index'])->name('setting');
+
+Route::put('/halaman/user/setting/update', [SettingController::class, 'update'])->name('setting.update');

@@ -7,7 +7,7 @@
     <li class="nav-link ml-4">
         <div class="d-flex flex-column bd-highlight">
             <div class="">
-                <img src="{{asset('img/users/user1.jpg')}}" width="100px" alt="" class="rounded-circle rounded mx-auto d-block">
+                <img src="{{ URL('img/users/',auth()->user()->images) }}" width="60px" alt="" class="rounded-circle rounded mx-auto d-block">
             </div>
             <div class="text-center">
                 <span class="poppins-14-semibold">{{auth()->user()->name}}</span>
@@ -26,7 +26,7 @@
             </div>
         </a>
     </li>
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="#">
             <div class="d-flex flex-row bd-highlight menu-active">
                 <div class="p-1 bd-highlight">
@@ -37,9 +37,9 @@
                 </div>
             </div>
         </a>
-    </li>
+    </li> --}}
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('page.user') }}">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">book</span>
@@ -50,8 +50,8 @@
             </div>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{ route('setting') }}">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">settings</span>
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </a>
-    </li>
+    </li> --}}
     <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Yakin ?')">
             <div class="d-flex flex-row bd-highlight">

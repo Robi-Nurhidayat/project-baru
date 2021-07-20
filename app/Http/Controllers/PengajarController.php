@@ -41,7 +41,7 @@ class PengajarController extends Controller
         // $extension = $request->file('images')->extension();
         $extension = $request->file('images')->extension();
         $filename = time(). '.' . $extension;
-        Storage::putFileAs('public/movies', $request->file('images'),$filename);
+        Storage::putFileAs('public/img/users', $request->file('images'),$filename);
 
 
         $pengajar->nama = $request->nama;
