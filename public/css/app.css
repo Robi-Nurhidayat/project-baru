@@ -11,14 +11,17 @@
     --primary-50: #92A0EB;
     --primary-30: #BDC6F3;
     --primary-10: #E9ECFB;
+    --success-100: #20C997;
     --success-80: #4CD3AB;
     --success-50: #8FE4CB;
     --success-30: #BCEEDF;
     --success-10: #E8F9F4;
+    --warning-100: #FFC107;
     --warning-80: #FFCD38;
     --warning-50: #FFE083;
     --warning-30: #FFECB4;
     --warning-10: #FFF8E6;
+    --alert-100: #DC3545;
     --alert-80: #E35D6A;
     --alert-50: #ED9AA2;
     --alert-30: #F4C2C7;
@@ -78,6 +81,10 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 
+.body-page {
+    background-color: var(--white-secondary);
+}
+
 .font-card1 {
     font-size: 12px;
 }
@@ -128,8 +135,78 @@ h6 {
     height: 150px;
 }
 
+/* custom css bootstrap */
+.btn-primary {
+    background-color: var(--primary-100);
+}
+
+.btn-primary:hover {
+    background-color: #2137b6;
+}
+
+/* akhir custom bootstrap */
+
+/* navbar */
+.main-navbar {
+    background-color: var(--white-primary);
+    box-shadow: 0 0 50px #ccc;
+    font-weight: 600;
+    color: var(--black-80);
+}
+
+.login-button a {
+    font-weight: 600;
+    color: var(--black-80);
+}
+
+.signup-button a {
+    font-weight: 600;
+    color: var(--white-secondary) !important;
+}
+
+.logo-navbar {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--success-100) !important;
+}
+
+.ul-button {
+    margin-left: 90px;
+}
+
+.col-menu a:hover {
+    color: var(--primary-100);
+}
+
+.btn-login a:hover {
+    background-color: var(--black-10);
+    transition: all 0.5s;
+}
+
+/* penutup navbar */
+
+/* body hero */
+.hero {
+    background-color: var(--white-secondary);
+}
+
+.hero a {
+    font-weight: 600;
+    padding: 10px 45px;
+}
+
+.roboto-24-reguler {
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+
+/* penutup body hero */
+
 /* css sidebar user */
-.logo {
+.logo-sidebar {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 18px;

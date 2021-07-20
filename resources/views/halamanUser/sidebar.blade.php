@@ -1,6 +1,6 @@
 <ul class="nav flex-column mt-4">
     <li class="nav-link mb-3">
-        <div class="logo text-xl-center">
+        <div class="logo-sidebar text-xl-center">
             ITCourse
         </div>
     </li>
