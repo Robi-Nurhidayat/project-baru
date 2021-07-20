@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class TampilPesanContact extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('contact');
+
+        $pesan = Contact::all();
+        return view('admin.tampilPesanUser', compact('pesan'));
     }
 
     /**
@@ -34,16 +36,9 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Contact $contact)
+    public function store(Request $request)
     {
-
-        $contact->nama = $request->nama;
-        $contact->email = $request->email;
-        $contact->no_tlp = $request->no_tlp;
-        $contact->pesan = $request->pesan;
-        $contact->save();
-
-        return redirect()->route('contact');
+        //
     }
 
     /**

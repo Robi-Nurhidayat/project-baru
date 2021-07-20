@@ -25,6 +25,7 @@ use App\Http\Controllers\CssController;
 use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\AndroidJavaController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\TampilPesanContact;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -133,6 +134,7 @@ Route::get('/kelas/css', [CssController::class, 'index'])->name('css');
 Route::get('/kelas/html', [HtmlController::class, 'index'])->name('html');
 Route::get('/kelas/androidjava', [AndroidJavaController::class, 'index'])->name('androidjava');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact/sendMessage', [ContactController::class, 'store'])->name('contact.post');
 
 
 
@@ -143,3 +145,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 // Route::post('/login/admin/berhasil', [AdminLoginController::class, 'postLogin'])->name('adminLogin.postLogin');
  Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('registerAdmin');
 // Route::post('/register/admin/register', [AdminRegisterController::class, 'postRegister'])->name('registerAdmin.register');
+
+
+// pesan user
+
+Route::get('/admin/pesan', [TampilPesanContact::class, 'index'])->name('tampilPesanUser');

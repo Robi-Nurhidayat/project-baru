@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title></title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -82,6 +82,13 @@
                 <a class="nav-link" href="{{ route('kelas') }}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Kelas</span></a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('tampilPesanUser') }}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Pesan</span></a>
             </li>
 {{--
             <li class="nav-item">

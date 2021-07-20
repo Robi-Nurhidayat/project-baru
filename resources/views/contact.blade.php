@@ -15,25 +15,26 @@
 
     <div class="row">
         <div class="col-md-6 col-lg-6">
-            <form action="">
+            <form action="{{ route('contact.post') }}" method="POST">
+                @csrf
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap Anda">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap Anda" name="nama">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda" name="email">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputEmail1">No Telepon</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No Telepon Anda">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No Telepon Anda" name="no_tlp">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Pesan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda ..."></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda ..." name="pesan"></textarea>
                   </div>
 
                   <div class="form-group">
