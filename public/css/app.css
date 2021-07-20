@@ -47,6 +47,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     z-index: 2;
     margin: 0;
@@ -77,6 +81,10 @@ nav {
 
     /* Support for IE. */
     font-feature-settings: 'liga';
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
 }
 
 /* custom css */
@@ -119,6 +127,11 @@ nav {
 .footer {
     display: flex;
     justify-content: space-around;
+}
+
+.footer-jumbotron a {
+    text-decoration: none;
+    color: var(--black-100);
 }
 
 h1,
@@ -338,7 +351,55 @@ h6 {
     font-weight: 500;
 }
 
+#pricing {
+    transition: 1s all;
+    scroll-behavior: smooth;
+}
+
 /* penutup home style */
+
+/* about style */
+.header-poppins-48 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.poppins-14-bold {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-transparent {
+    background-color: var(--white-secondary);
+    border: none;
+}
+
+.socmed a {
+    text-decoration: none;
+    color: var(--black-50);
+}
+
+.poppins-18-semibold {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+}
+
+.poppins-18-reguler {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: var(--black-50);
+}
+
+/* penutup about */
 
 /* css sidebar user */
 .sidebar a:hover {
@@ -436,7 +497,7 @@ h6 {
     color: var(--black-80);
 }
 
-/* penutup */
+/* kelas */
 
 /* responsive in bottom */
 

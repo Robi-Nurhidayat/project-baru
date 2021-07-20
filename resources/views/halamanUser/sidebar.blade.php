@@ -15,7 +15,7 @@
         </div>
     </li>
     <li class="nav-item mt-3">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{ route('user') }}">
             <div class="d-flex flex-row bd-highlight menu-active">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">home</span>

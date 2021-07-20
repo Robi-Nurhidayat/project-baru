@@ -429,42 +429,65 @@
 </div>
 <!-- Akhir Penawaran -->
 
-{{-- footer --}}
 <div class="bg-white footer-jumbotron shadow-sm">
   <div class="container py-5">
     <div class="row">
       <div class="col-5">
         <p class="logo-navbar">ITCourse</p>
-        <p class="roboto-14-medium">ITCourse adalah sebuah website belajar secara daring tentang pemrograman berupa sebuah video belajar </p>
+        <p class="roboto-14-medium">
+          ITCourse adalah sebuah website belajar secara daring tentang pemrograman berupa sebuah video belajar
+        </p>
         <p class="roboto-14-medium">© Copyright 2021 ITCourse</p>
       </div>
 
       <div class="col">
         <p class="poppins-18-bold">Perusahaan</p>
-        <p class="roboto-14-medium">About</p>
-        <p class="roboto-14-medium">Contact</p>
-        <p class="roboto-14-medium">Our Team</p>
+        <a href="{{ route('about') }}">
+          <p class="roboto-14-medium">About</p>
+        </a>
+        <a href="{{ route('contact') }}">
+          <p class="roboto-14-medium">Contact</p>
+        </a>
+        <a href="{{ route('about') }}#team">
+          <p class="roboto-14-medium">Our Team</p>
+        </a>
       </div>
 
       <div class="col">
         <p class="poppins-18-bold">Komunitas</p>
-        <p class="roboto-14-medium">Course</p>
-        <p class="roboto-14-medium">Mentor</p>
-        <p class="roboto-14-medium">Konsultasi</p>
-        <p class="roboto-14-medium">Testimonial</p>
-        <p class="roboto-14-medium">Become a Mentor</p>
+        <a href="">
+          <p class="roboto-14-medium">Course</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Mentor</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Konsultasi</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Testimonial</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Become a Mentor</p>
+        </a>
       </div>
 
       <div class="col">
+
         <p class="poppins-18-bold">Tautan Pengguna</p>
-        <p class="roboto-14-medium">Support</p>
-        <p class="roboto-14-medium">Kebijakan Privasi</p>
-        <p class="roboto-14-medium">Syarat dan Ketentuan</p>
+        <a href="">
+          <p class="roboto-14-medium">Support</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Kebijakan Privasi</p>
+        </a>
+        <a href="">
+          <p class="roboto-14-medium">Syarat dan Ketentuan</p>
+        </a>
       </div>
     </div>
   </div>
 </div>
-
 {{-- end of footer --}}
 
 @endsection

@@ -2,7 +2,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="container">
+  <div class="container" id="navbarNav">
     <div class="row">
       <div class="col-sm">
         <a class="navbar-brand logo-navbar" href="/">ITCourse</a>
@@ -18,7 +18,7 @@
             </div>
             <div class="p-2 bd-highlight">
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="/#pricing">Pricing</a>
               </li>
             </div>
             <div class="p-2 bd-highlight">
