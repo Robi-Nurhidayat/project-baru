@@ -40,7 +40,7 @@
         </a>
     </li> --}}
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('page.user') }}">
+        <a class="nav-link" href="">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">book</span>

@@ -20,9 +20,9 @@
         <th scope="col">No</th>
         <th scope="col">Nama Kelas</th>
         <th scope="col">Pengajar</th>
-        <th scope="col">Harga Kelas</th>
-        <th scope="col">Kategori</th>
-        <th scope="col">Images</th>
+        {{-- <th scope="col">Harga Kelas</th> --}}
+        {{-- <th scope="col">Kategori</th> --}}
+        {{-- <th scope="col">Images</th> --}}
         <th scope="col">Opsi</th>
       </tr>
     </thead>
@@ -35,9 +35,9 @@
         <th scope="row">{{ $i; }}</th>
         <td>{{ $k->namaKelas }}</td>
         <td>{{ $k->namaPengajar }}</td>
-        <td>{{ $k->hargaKelas }}</td>
-        <td>{{ $k->kategori }}</td>
-        <td><img src="{{ asset('storage/movies/'. $k->images) }}" alt="" style="width: 70px; height:70px;"></td>
+        {{-- <td>{{ $k->hargaKelas }}</td> --}}
+        {{-- <td>{{ $k->kategori }}</td> --}}
+        {{-- <td><img src="{{ asset('storage/movies/'. $k->images) }}" alt="" style="width: 70px; height:70px;"></td> --}}
         <td>
             <a href="{{ route('kelas.edit', $k->id) }}" class="btn btn-outline-success">edit</a>
         </td>

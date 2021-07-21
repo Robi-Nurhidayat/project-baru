@@ -18,51 +18,21 @@
             <form action="{{ route('contact.post') }}" method="POST">
                 @csrf
                 <div class="form-group">
-<<<<<<< HEAD
                     <label for="exampleInputEmail1">Nama Lengkap</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap Anda" name="nama">
-                  </div>
-=======
-                    <label for="exampleInputEmail1" class="roboto-medium-18">Nama Lengkap</label>
-                    <input type="text" class="form-control roboto-medium-18" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap Anda">
                 </div>
->>>>>>> 223826101eaeb2a66084181eba07929d73769a5f
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email Address</label>
-<<<<<<< HEAD
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda" name="email">
-                  </div>
-=======
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda">
                 </div>
->>>>>>> 223826101eaeb2a66084181eba07929d73769a5f
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">No Telepon</label>
-<<<<<<< HEAD
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No Telepon Anda" name="no_tlp">
-                  </div>
-=======
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No Telepon Anda">
                 </div>
->>>>>>> 223826101eaeb2a66084181eba07929d73769a5f
-
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Pesan</label>
-<<<<<<< HEAD
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda ..." name="pesan"></textarea>
-                  </div>
-
-                  <div class="form-group">
-                      <button type="submit" class="btn btn-outline-primary">Send Message</button>
-                  </div>
-
-=======
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda ..."></textarea>
                 </div>
->>>>>>> 223826101eaeb2a66084181eba07929d73769a5f
-
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block poppins-18-bold">Send Message</button>
                 </div>

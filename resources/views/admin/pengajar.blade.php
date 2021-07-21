@@ -21,7 +21,7 @@
             <th scope="col">Usia</th>
             <th scope="col">Alamat</th>
             <th scope="col">Kelas</th>
-            <th scope="col">Images</th>
+            {{-- <th scope="col">Images</th> --}}
             <th scope="col">Opsi</th>
           </tr>
         </thead>
@@ -37,7 +37,7 @@
             <td>{{ $p->usia }}</td>
             <td>{{ $p->alamat }}</td>
             <td>{{ $p->kelas }}</td>
-            <td><img src="{{ asset('storage/img/users/'. $p->images) }}" alt="" style="width: 70px; height:70px;"></td>
+            {{-- <td><img src="{{ asset('storage/img/users/'. $p->images) }}" alt="" style="width: 70px; height:70px;"></td> --}}
             <td>
                 <a href="{{ route('pengajar.edit',$p->id) }}" class="btn btn-outline-success">Edit</a>
             </td>

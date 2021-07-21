@@ -17,9 +17,9 @@ class PageUserController extends Controller
     public function index()
     {
 
-        $kelas = Kelas::all();
-        $menu = Menu::all();
-        return view('halamanUser.pageUser',['kelas' => $kelas, 'menu' => $menu]);
+        // $kelas = Kelas::all();
+        // $menu = Menu::all();
+        return view('halamanUser.pageUser');
     }
 
     /**

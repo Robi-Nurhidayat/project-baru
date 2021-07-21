@@ -1,4 +1,4 @@
-@extends('halamanuser.app')
+@extends('halamanUser.app')
 
 
 @section('content')

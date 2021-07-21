@@ -113,7 +113,11 @@ Route::put('/admin/pengajar/update', [PengajarController::class, 'update'])->nam
 
 Route::delete('/admin/pengajar/delete/{pengajar}', [PengajarController::class, 'destroy'])->name('pengajar.delete');
 
-Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.user');
+// Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.user');
+
+Route::get('/halaman/user', [PageUserController::class, 'index'])->name('p');
+
+Route::get('halaman/page/user',[PageUserController::class, 'index'])->name('userHalaman');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 

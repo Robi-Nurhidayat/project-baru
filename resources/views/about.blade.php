@@ -175,7 +175,7 @@
         <div class="col">
           <div class="card card-transparent mt-3">
             <div class="images d-flex justify-content-center mt-3">
-              <img src="{{ asset('img/team/akbar.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
+              <img src="{{ asset('img/team/robi.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
             </div>
             <div class="text-center mt-2">
               <p class="poppins-14-bold">Robi Nurhidayat</p>
