@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="">
+<div class="my-5">
     <h2>Data Pengajar</h2>
 
     <!-- Button trigger modal -->

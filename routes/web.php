@@ -187,3 +187,4 @@ Route::put('/halaman/user/setting/update', [SettingController::class, 'update'])
 // tampil pelajar baru
 
 Route::get('/admin/pelajar/baru', [PelajarBaruController::class, 'index'])->name('pelajar_baru');
+Route::get('/admin/pelajar_baru/delete/{user}',[PelajarBaruController::class,'destroy'])->name('pelajar_baru.delete');

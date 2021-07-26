@@ -12,7 +12,7 @@
             <th scope="col">Nama</th>
             <th scope="col">Email</th>
             <th scope="col">Foto</th>
-            {{-- <th scope="col">Aksi</th> --}}
+            <th scope="col">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -27,9 +27,9 @@
             <td>
                 <img src="{{ URL('img/users', $p->images) }}" alt="" style="height: 40px; height:40px;">
             </td>
-            {{-- <td>
-                <a href="{{ route('hapusPesanUser',$p->id) }}" class="btn btn-outline-danger" onclick="return confirm('Yakin ?')">Delete</a>
-            </td> --}}
+            <td>
+                <a href="{{ route('pelajar_baru.delete',$p->id) }}" class="btn btn-outline-danger" onclick="return confirm('Yakin ?')">Delete</a>
+            </td>
           </tr>
         </tbody>
           <?php $i++ ?>
