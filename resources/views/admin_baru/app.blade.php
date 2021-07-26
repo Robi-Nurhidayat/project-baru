@@ -25,11 +25,11 @@
 
 <body>
 
-  <!-- @include('admin.navbar') -->
+  <!-- @include('admin_baru.navbar') -->
   <div class="row">
 
     <div class="col-sm-2 sidebar">
-      @include('admin.sidebar')
+      @include('admin_baru.sidebar')
     </div>
 
     <div class="body-user-container col-sm-10">
@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <!-- @yield('') -->
+  {{-- <!-- @yield('content') --> --}}
 
   <!-- Optional JavaScript; choose one of the two! -->
 

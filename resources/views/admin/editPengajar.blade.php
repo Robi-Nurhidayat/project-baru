@@ -1,4 +1,4 @@
-@extends('admin.app')
+@extends('admin_baru.app')
 
 @section('content')
 

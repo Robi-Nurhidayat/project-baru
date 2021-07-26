@@ -25,6 +25,7 @@ use App\Http\Controllers\CssController;
 use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\AndroidJavaController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PelajarBaruController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TampilPesanContact;
 use App\Http\Controllers\TampilUserController;
@@ -84,21 +85,21 @@ Route::group(['middleware' => 'auth', 'checkLevel:user'], function () {
 
 
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
 // halaman admin crud kelas
 
 
 
 
-Route::get('/admin/kelas', [KelasController::class, 'index'])->name('kelas');
+// Route::get('/admin/kelas', [KelasController::class, 'index'])->name('kelas');
 
-Route::post('/admin/kelas/tambahKelas', [KelasController::class, 'store'])->name('kelas.store');
+// Route::post('/admin/kelas/tambahKelas', [KelasController::class, 'store'])->name('kelas.store');
 
-Route::get('/admin/kelas/edit/{kelas}', [KelasController::class, 'edit'])->name('kelas.edit');
+// Route::get('/admin/kelas/edit/{kelas}', [KelasController::class, 'edit'])->name('kelas.edit');
 
-Route::put('/admin/kelas/update', [KelasController::class, 'update'])->name('kelas.update');
+// Route::put('/admin/kelas/update', [KelasController::class, 'update'])->name('kelas.update');
 
-Route::delete('/admin/kelas/delete/{kelas}', [KelasController::class, 'destroy'])->name('kelas.delete');
+// Route::delete('/admin/kelas/delete/{kelas}', [KelasController::class, 'destroy'])->name('kelas.delete');
 
 
 // halaman admin crud pengajar
@@ -113,7 +114,10 @@ Route::put('/admin/pengajar/update', [PengajarController::class, 'update'])->nam
 
 Route::delete('/admin/pengajar/delete/{pengajar}', [PengajarController::class, 'destroy'])->name('pengajar.delete');
 
-// Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.user');
+
+// sadaaaaaaaaaaaaaaaaaaaaa
+
+Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.user');
 
 Route::get('/halaman/user', [PageUserController::class, 'index'])->name('p');
 
@@ -149,6 +153,8 @@ Route::post('/contact/sendMessage', [ContactController::class, 'store'])->name('
 
 // login admin
 
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
 Route::get('/login/admin', [AdminLoginController::class, 'index'])->name('adminLogin');
 // Route::post('/login/admin/berhasil', [AdminLoginController::class, 'postLogin'])->name('adminLogin.postLogin');
 Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('registerAdmin');
@@ -158,6 +164,7 @@ Route::get('/register/admin', [AdminRegisterController::class, 'index'])->name('
 // pesan user
 
 Route::get('/admin/pesan', [TampilPesanContact::class, 'index'])->name('tampilPesanUser');
+Route::get('/admin/hapus/{contact}', [TampilPesanContact::class, 'destroy'])->name('hapusPesanUser');
 
 
 
@@ -174,3 +181,9 @@ Route::delete('/admin/user/delete/{user}', [TampilUserController::class, 'destro
 Route::get('/halaman/user/setting/', [SettingController::class, 'index'])->name('setting');
 
 Route::put('/halaman/user/setting/update', [SettingController::class, 'update'])->name('setting.update');
+
+
+
+// tampil pelajar baru
+
+Route::get('/admin/pelajar/baru', [PelajarBaruController::class, 'index'])->name('pelajar_baru');

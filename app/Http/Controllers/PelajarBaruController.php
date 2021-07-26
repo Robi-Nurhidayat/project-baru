@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
-use Illuminate\Contracts\Redis\Connector;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class TampilPesanContact extends Controller
+class PelajarBaruController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,8 @@ class TampilPesanContact extends Controller
      */
     public function index()
     {
-
-        $pesan = Contact::all();
-        return view('admin.tampilPesanUser', compact('pesan'));
+        $user = User::all();
+        return view('admin_baru.pelajar_baru',['user' => $user]);
     }
 
     /**
@@ -82,9 +80,8 @@ class TampilPesanContact extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Contact $contact)
+    public function destroy($id)
     {
-        $contact->delete();
-        redirect()->route('tampilPesanUser');
+        //
     }
 }
