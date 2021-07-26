@@ -59,7 +59,24 @@
   <!-- AOS Javascript  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    const courseCard = document.querySelectorAll('.course-card');
+
+    courseCard.forEach((div, i) => {
+      div.dataset.aos = 'fade-up';
+      div.dataset.aosDelay = i * 200;
+      div.dataset.aosDuration = 1000;
+    });
+
+
+    AOS.init({
+      once: true
+    });
+  </script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script>
+
   </script>
 
   <!-- Custom Javascript -->

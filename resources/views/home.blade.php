@@ -25,16 +25,15 @@
 <div class="jumbotron hero mx-5 my-4">
   <div class="row">
     <div class="col-sm-5">
-      <h1>Learn Programming</h1>
-      <h1 class="mb-4">Smart For Your Future</h1>
+      <h1 class="header-hero">Learn Programming Smart For Your Future</h1>
 
-      <p class="lead mb-4 roboto-24-reguler">Belajar cerdas seputar programming bersama ITCourse dan dapatkan pengetahuan untuk membangun masa depan anda yang lebih terarah</p>
+      <p class="lead mb-4 roboto-24-reguler text-hero"></p>
 
-      <a class="btn btn-primary poppins-18-bold" href="{{ route('register') }}" role="button">Get started</a>
+      <a class="btn btn-primary poppins-18-bold btn-hero" href="{{ route('register') }}" role="button">Get started</a>
     </div>
 
     <div class="col-sm-6 ml-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-      <img src="{{ asset('img/home/hero.jpg') }}" alt="">
+      <img class="hero-image" src="{{ asset('img/home/hero.jpg') }}" alt="">
     </div>
   </div>
 
@@ -172,10 +171,10 @@
 {{-- card popular course --}}
 
 <div class="jumbotron hero mx-5 my-4">
-  <h4 data-aos="fade" data-aos-duration="600" data-aos-easing="ease-in-sine">
+  <h4 class="popcourse-text">
     Popular Course
   </h4>
-  <p class="roboto-18-bold" data-aos="fade" data-aos-delay="50" data-aos-duration="600" data-aos-easing="ease-in-sine">
+  <p class="popcourse-text roboto-18-bold">
     Top Course Demand in 2021
   </p>
   <div class="container ml-n3">
@@ -258,11 +257,11 @@
 
 {{-- why LearnIT --}}
 
-<div class="jumbotron backgroud-primary">
-  <h4 class="text-white text-sm-center">Why IT Course</h4>
-  <p class="text-white text-sm-center roboto-18-bold">Alasan Mengapa anda harus memilih ITCourse</p>
+<div class="jumbotron backgroud-primary unggulan">
+  <h4 class="text-white text-sm-center text-unggulan">Why IT Course</h4>
+  <p class="text-white text-sm-center roboto-18-bold text-unggulan">Alasan Mengapa anda harus memilih ITCourse</p>
   <div class="content-why mt-4">
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_waktu.jpg') }}" alt="" class="rounded">
@@ -272,7 +271,7 @@
       </div>
     </div>
 
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_uang.png') }}" alt="" class="rounded">
@@ -282,7 +281,7 @@
       </div>
     </div>
 
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_mentor.png') }}" alt="" class="rounded">
@@ -302,14 +301,14 @@
 
 <div class="jumbotron hero mx-5 my-4">
   <div class="tetimonial-header mb-3">
-    <h4>Testimonial Students</h4>
-    <p class="roboto-18-bold">Testimonial from students, What They Say? </p>
+    <h4 class="testi-text">Testimonial Students</h4>
+    <p class="roboto-18-bold testi-text">Testimonial from students, What They Say? </p>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="card ml-n3 mr-2 border-black">
+        <div class="card ml-n3 mr-2 border-black testi-card">
           <div class="card-body">
             <div class="d-flex flex-row bd-highlight mb-3">
               <div class="bd-highlight">
@@ -334,7 +333,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card ml-n3 mr-2 border-black">
+        <div class="card ml-n3 mr-2 border-black testi-card">
           <div class="card-body">
             <div class="d-flex flex-row bd-highlight mb-3">
               <div class="bd-highlight">
@@ -359,7 +358,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card ml-n3 mr-2 border-black">
+        <div class="card ml-n3 mr-2 border-black testi-card">
           <div class="card-body">
             <div class="d-flex flex-row bd-highlight mb-3">
               <div class="bd-highlight">
@@ -384,7 +383,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card ml-n3 mr-2 border-black">
+        <div class="card ml-n3 mr-2 border-black testi-card">
           <div class="card-body">
             <div class="d-flex flex-row bd-highlight mb-3">
               <div class="bd-highlight">

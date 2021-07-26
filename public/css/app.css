@@ -43,20 +43,6 @@
         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-body {
-    overflow-x: hidden;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-nav {
-    z-index: 2;
-    margin: 0;
-    padding: 0;
-}
-
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -85,6 +71,36 @@ nav {
 
 .material-icons.md-48 {
     font-size: 48px;
+}
+
+/* penutup material-icons */
+
+/* custom more css */
+
+/* ubah seleksi teks */
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--white-primary);
+    background: var(--primary-100);
+}
+
+::selection {
+    color: var(--white-primary);
+    background: var(--primary-100);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
 }
 
 /* custom css */
