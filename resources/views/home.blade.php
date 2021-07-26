@@ -33,7 +33,7 @@
       <a class="btn btn-primary poppins-18-bold" href="{{ route('register') }}" role="button">Get started</a>
     </div>
 
-    <div class="col-sm-6 ml-4">
+    <div class="col-sm-6 ml-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <img src="{{ asset('img/home/hero.jpg') }}" alt="">
     </div>
   </div>
@@ -46,7 +46,7 @@
 {{-- Card plan --}}
 <div class="jumbotron hero mx-5 my-4" id="pricing">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="card p-2 card-pricing-main text-white shadow rounded" style="width: 20rem;">
         <div class="card-body">
           <h5 class="card-title font-weight-bold">Save More <br>
@@ -59,8 +59,10 @@
     </div>
 
     <div class="col-sm">
-      <h2>Choose Your Plan</h2>
-      <div class="card free-pricing-card shadow rounded " style="width: 20rem; height:89%;">
+      <h2>
+        Choose Your Plan
+      </h2>
+      <div class="card free-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-in-out">
         <div class="card-body">
           <h5 class="card-title font-weight-bold">Free</h5>
           <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
@@ -100,7 +102,7 @@
     </div>
 
     <div class="col-sm">
-      <div class="card my-5 premium-pricing-card shadow rounded " style="width: 20rem; height:89%;">
+      <div class="card my-5 premium-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200">
         <div class="card-body">
           <h5 class="card-title font-weight-bold">Premium</h5>
           <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
@@ -170,12 +172,16 @@
 {{-- card popular course --}}
 
 <div class="jumbotron hero mx-5 my-4">
-  <h4 class="">Popular Course</h4>
-  <p class="roboto-18-bold">Top Course Demand in 2021</p>
+  <h4 data-aos="fade" data-aos-duration="600" data-aos-easing="ease-in-sine">
+    Popular Course
+  </h4>
+  <p class="roboto-18-bold" data-aos="fade" data-aos-delay="50" data-aos-duration="600" data-aos-easing="ease-in-sine">
+    Top Course Demand in 2021
+  </p>
   <div class="container ml-n3">
     <div class="row">
-      <div class="col">
-        <div class="card shadow-sm" style="">
+      <div class="col course-card">
+        <div class="card shadow-sm">
           <img src="{{ URL('img/course/python.jpg') }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title roboto-18-medium">Python Basic</h5>
@@ -191,8 +197,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card shadow-sm" style="">
+      <div class="col course-card">
+        <div class="card shadow-sm">
           <img src="{{ URL('img/course/js.jpg') }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title roboto-18-medium">Javascript</h5>
@@ -208,8 +214,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card shadow-sm" style="">
+      <div class="col course-card">
+        <div class="card shadow-sm">
           <img src="{{ URL('img/course/react.jpg') }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title roboto-18-medium">React JS</h5>
@@ -225,8 +231,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card shadow-sm" style="">
+      <div class="col course-card">
+        <div class="card shadow-sm">
           <img src="{{ URL('img/course/laravel.jpg') }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title roboto-18-medium">Laravel</h5>
