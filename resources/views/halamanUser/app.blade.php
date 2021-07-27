@@ -48,7 +48,6 @@
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -59,14 +58,21 @@
   <!-- AOS Javascript  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    const courseCard = document.querySelectorAll('.course-card');
-
-    courseCard.forEach((div, i) => {
+    // Testicard Animation
+    const testiCard = document.querySelectorAll('.testi-card');
+    testiCard.forEach((div, i) => {
       div.dataset.aos = 'fade-up';
-      div.dataset.aosDelay = i * 200;
+      div.dataset.aosDelay = i * 250;
       div.dataset.aosDuration = 1000;
     });
 
+    // Course Card Animation
+    const courseCard = document.querySelectorAll('.course-card');
+    courseCard.forEach((div, i) => {
+      div.dataset.aos = 'fade-up';
+      div.dataset.aosDelay = i * 250;
+      div.dataset.aosDuration = 1000;
+    });
 
     AOS.init({
       once: true
@@ -75,8 +81,93 @@
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script>
+    // import/register plugin
+    gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
+    // Animasi Halaman HOME
+
+    // Animasi Text Hero
+    gsap.from('.header-hero', {
+      duration: 1,
+      y: 100,
+      opacity: 0,
+      ease: "circ.out"
+    });
+
+    // Animasi text paragraf hero
+    gsap.to('.text-hero', {
+      duration: 2,
+      delay: 0.5,
+      text: 'Belajar cerdas seputar programming bersama ITCourse dan dapatkan pengetahuan untuk membangun masa depan anda yang lebih terarah',
+      ease: 'sine'
+    });
+
+    // Animasi Gambar Hero
+    gsap.from('.hero-image', {
+      duration: 1,
+      scale: 0.5,
+      opacity: 0,
+      // ease: 'back.out'
+    });
+
+    // Animasi button get started hero
+    gsap.from('.btn-hero', {
+      duration: 1,
+      delay: 2.5,
+      opacity: 0,
+      y: 50
+    })
+
+    // Animasi text section Popular Course
+    document.querySelectorAll(".popcourse-text").forEach((popCourseText, i) => {
+      gsap.from(popCourseText, {
+        scrollTrigger: popCourseText,
+        duration: 0.6,
+        delay: i * 0.2,
+        y: 100,
+        opacity: 0,
+        ease: "circ.out"
+      });
+    });
+
+    // Animasi card di section unggulan
+    gsap.from('.card-unggulan', {
+      scrollTrigger: ".card-unggulan",
+      duration: 2,
+      scale: 0.5,
+      opacity: 0,
+      delay: 0.6,
+      stagger: 0.2,
+      ease: "elastic",
+      force3D: true
+    });
+
+    // Animasi text card unggulan
+    document.querySelectorAll(".text-unggulan").forEach((textUnggul, i) => {
+      gsap.from(textUnggul, {
+        scrollTrigger: textUnggul,
+        duration: 0.6,
+        delay: i * 0.3,
+        y: 100,
+        opacity: 0,
+        ease: "circ.out"
+      });
+    });
+
+    // Animasi text testimonial
+    document.querySelectorAll(".testi-text").forEach((textTesti, i) => {
+      gsap.from(textTesti, {
+        scrollTrigger: textTesti,
+        duration: 0.6,
+        delay: i * 0.2,
+        y: 100,
+        opacity: 0,
+        ease: "circ.out"
+      });
+    });
   </script>
 
   <!-- Custom Javascript -->

@@ -64,6 +64,14 @@
       div.dataset.aosDuration = 1000;
     });
 
+    // Team Card Animation
+    const teamCard = document.querySelectorAll('.team-card');
+    teamCard.forEach((div, i) => {
+      div.dataset.aos = 'fade-up';
+      div.dataset.aosDelay = i * 250;
+      div.dataset.aosDuration = 1000;
+    });
+
     AOS.init({
       once: true
     });
@@ -158,6 +166,36 @@
         ease: "circ.out"
       });
     });
+
+    // Penutup HOME Animasi
+
+    // ABOUT Animasi
+
+    // Animasi text about
+    document.querySelectorAll(".text-about").forEach((textAbout, i) => {
+      gsap.from(textAbout, {
+        duration: 1,
+        delay: i * 0.1,
+        y: 100,
+        opacity: 0,
+        ease: "circ.out"
+      });
+    });
+
+    // Animasi text our team
+    document.querySelectorAll(".team-text").forEach((teamText, i) => {
+      gsap.from(teamText, {
+        scrollTrigger: teamText,
+        duration: 0.6,
+        delay: i * 0.2,
+        y: 100,
+        opacity: 0,
+        ease: "circ.out"
+      });
+    });
+
+
+    // Penutup ABOUT Animasi
   </script>
 
   <!-- Custom Javascript -->

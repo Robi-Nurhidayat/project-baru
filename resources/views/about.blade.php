@@ -4,18 +4,19 @@
 
 <div class="jumbotron mx-5 my-2 bg-light">
   <div class="container">
-    <h1 class="display-4 text-center header-poppins-48">ABOUT US</h1>
-    <p class="lead mt-4 roboto-18-medium" style="width: 100%;">ITCourse adalah sebuah website belajar secara daring atau online dengan menggunkan metode pembelajaran tentang pemrograman berupa sebuah video belajar dan user dapat memilih video belajar yang diinginkan.</p>
+    <h1 class="display-4 text-center header-poppins-48 text-about">ABOUT US</h1>
+    <p class="lead mt-4 roboto-18-medium text-about" style="width: 100%;">
+      ITCourse adalah sebuah website belajar secara daring atau online dengan menggunkan metode pembelajaran tentang pemrograman berupa sebuah video belajar dan user dapat memilih video belajar yang diinginkan.</p>
   </div>
 </div>
 
 {{-- why LearnIT --}}
 
-<div class="jumbotron backgroud-primary">
-  <h4 class="text-white text-sm-center">Why IT Course</h4>
-  <p class="text-white text-sm-center roboto-18-bold">Alasan Mengapa anda harus memilih ITCourse</p>
+<div class="jumbotron backgroud-primary unggulan">
+  <h4 class="text-white text-sm-center text-unggulan">Why IT Course</h4>
+  <p class="text-white text-sm-center roboto-18-bold text-unggulan">Alasan Mengapa anda harus memilih ITCourse</p>
   <div class="content-why mt-4">
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_waktu.jpg') }}" alt="" class="rounded">
@@ -25,7 +26,7 @@
       </div>
     </div>
 
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_uang.png') }}" alt="" class="rounded">
@@ -35,7 +36,7 @@
       </div>
     </div>
 
-    <div class="card mr-4" style="width: 15rem;">
+    <div class="card mr-4 card-unggulan" style="width: 15rem;">
       <div class="card-body">
         <div class="card-body text-center mt-n3">
           <img src="{{ URL('img/home/icon_mentor.png') }}" alt="" class="rounded">
@@ -53,13 +54,13 @@
 {{-- our team --}}
 
 <div class="jumbotron hero mx-5 my-2" id="team">
-  <h4 class="text-sm-center">OUR TEAM</h4>
-  <p class="text-sm-center roboto-18-bold">Meet The ITCourse Team</p>
+  <h4 class="text-sm-center team-text">OUR TEAM</h4>
+  <p class="text-sm-center roboto-18-bold team-text">Meet The ITCourse Team</p>
   <div class="our-team">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="card card-transparent mt-3">
+          <div class="card card-transparent mt-3 team-card">
             <div class="images d-flex justify-content-center mt-3">
               <img src="{{ asset('img/team/akbar.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
             </div>
@@ -97,7 +98,7 @@
         </div>
 
         <div class="col">
-          <div class="card card-transparent mt-3">
+          <div class="card card-transparent mt-3 team-card">
             <div class="images d-flex justify-content-center mt-3">
               <img src="{{ asset('img/team/bagus.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
             </div>
@@ -135,7 +136,7 @@
         </div>
 
         <div class="col">
-          <div class="card card-transparent mt-3">
+          <div class="card card-transparent mt-3 team-card">
             <div class="images d-flex justify-content-center mt-3">
               <img src="{{ asset('img/team/fachrul.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
             </div>
@@ -173,7 +174,7 @@
         </div>
 
         <div class="col">
-          <div class="card card-transparent mt-3">
+          <div class="card card-transparent mt-3 team-card">
             <div class="images d-flex justify-content-center mt-3">
               <img src="{{ asset('img/team/robi.jpg') }}" class="card-img-top rounded-circle" style="width: 8rem; height:8rem;" alt="...">
             </div>
