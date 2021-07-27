@@ -25,6 +25,7 @@ use App\Http\Controllers\CssController;
 use App\Http\Controllers\HtmlController;
 use App\Http\Controllers\AndroidJavaController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PaketCourse;
 use App\Http\Controllers\PelajarBaruController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TampilPesanContact;
@@ -188,3 +189,12 @@ Route::put('/halaman/user/setting/update', [SettingController::class, 'update'])
 
 Route::get('/admin/pelajar/baru', [PelajarBaruController::class, 'index'])->name('pelajar_baru');
 Route::get('/admin/pelajar_baru/delete/{user}',[PelajarBaruController::class,'destroy'])->name('pelajar_baru.delete');
+
+
+
+
+
+// tampilan paket course
+
+Route::get('/paket belajar', [PaketCourse::class, 'index'])->name('paket');
+Route::get('/paket belajar/{paket}', [PaketCourse::class, 'show'])->name('paket.show');
