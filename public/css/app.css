@@ -383,6 +383,12 @@ h6 {
 .poppins-14-bold {
     font-family: 'Poppins';
     font-size: 14px;
+    font-weight: 700;
+}
+
+.poppins-14-medium {
+    font-family: 'Poppins';
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -406,7 +412,7 @@ h6 {
 .poppins-18-reguler {
     font-size: 18px;
     font-family: 'Poppins';
-    font-weight: 600;
+    font-weight: 400;
     padding: 0;
 }
 
@@ -513,7 +519,67 @@ h6 {
     color: var(--black-80);
 }
 
-/* kelas */
+/* penutup kelas */
+
+/* style paketCourse */
+.pricing-card a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-pricing:hover {
+    color: var(--primary-100);
+}
+
+.btn-pricing {
+    color: var(--primary-80);
+    background-color: var(--primary-10);
+}
+
+.pricing-cost {
+    font-size: 24px;
+}
+
+.pricing-card:hover {
+    background-color: var(--primary-100);
+    color: var(--white-primary);
+}
+
+.poppins-medium-24 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* tutup paketCourse */
+
+/* ujicoba style */
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid var(--black-80);
+}
+
+textarea {
+    border: 1px solid var(--black-80) !important;
+}
+
+/* penutup ujicoba */
+
+/* login & sign up page style */
+.lupa-sandi a {
+    text-decoration: none;
+    color: var(--black-100);
+}
+
+.login-form a,
+.signup-form a,
+.admin-login-form a {
+    text-decoration: none;
+    color: var(--primary-100);
+}
+
+/* penutup login */
 
 /* responsive in bottom */
 

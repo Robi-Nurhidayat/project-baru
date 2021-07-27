@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron ml-auto bg-light mx-5" style="height: 70vh; width:80%; margin-top: 100px;">
-  <div class="row mt-5">
-    <div class="col-sm col-12">
+<div class="jumbotron bg-light m-auto" style="height: 70vh; width:80%; margin-top: 100px;">
+  <div class="row">
+    <div class="col-md mr-5 login-form">
       <h1 class="header-poppins-48">Login</h1>
       <p class="poppins-18-reguler">Belum punya akun ? <a href="{{ route('register') }}">Sign Up</a></p>
       <p>Login Sebagai <a href="{{ route('adminLogin') }}">Admin</a></p>
@@ -12,25 +12,27 @@
         @csrf
 
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+          <label for="email" class="roboto-18-medium">Email address</label>
+          <input type="email" class="form-control roboto-14-reguler" id="email" aria-describedby="emailHelp" name="email" placeholder="Masukkan Alamat Email Anda" required>
         </div>
 
         <div class="form-group">
-          <label for="exampleInputEmail1">Password</label>
-          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="password">
+          <label for="password" class="roboto-18-medium">Password</label>
+          <input type="password" class="form-control roboto-14-reguler" id="password" name="password" placeholder="Masukkan Kata Sandi" required>
         </div>
 
         <div class="form-group">
           <button type="submit" class="btn btn-primary btn-block poppins-18-bold">Login</button>
         </div>
       </form>
+      <div class="lupa-sandi text-xl-right poppins-18-reguler">
+        <a href="#">Lupa Kata Sandi?</a>
+      </div>
+
     </div>
 
-    <div class="col-sm col-12">
-      <div class="hero-register d-flex align-items-center m-0">
-        <img src="{{ asset('img/home/login.jpg') }}" alt="" style="width: 100%;">
-      </div>
+    <div class="col-md img-fluid mb-5">
+      <img src="{{ asset('img/home/login.jpg') }}" alt="" style="max-width: 100%;">
     </div>
   </div>
 

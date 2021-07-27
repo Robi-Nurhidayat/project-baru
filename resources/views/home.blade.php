@@ -95,7 +95,7 @@
               </p>
             </div>
           </div>
-          <a href="#" class="btn btn-primary btn-block pricing-button-primary">View Course List</a>
+          <a href="{{ route('register') }}" class="btn btn-primary btn-block pricing-button-primary">Get Started</a>
         </div>
       </div>
     </div>
@@ -159,7 +159,7 @@
               </p>
             </div>
           </div>
-          <a href="#" class="btn btn-course-white btn-block">View Course List</a>
+          <a href="{{ route('register') }}" class="btn btn-course-white btn-block">Get Started</a>
         </div>
       </div>
     </div>
@@ -426,7 +426,7 @@
     Your Education
   </h4>
   <div class="text-center p-2">
-    <a class=" btn btn-primary poppins-18-bold px-5 py-2" href="{{ route('register') }}" role="button">
+    <a class="btn btn-primary poppins-18-bold px-5 py-2" href="{{ route('register') }}" role="button">
       Get started
     </a>
   </div>
@@ -467,13 +467,7 @@
           <p class="roboto-14-medium">Mentor</p>
         </a>
         <a href="">
-          <p class="roboto-14-medium">Konsultasi</p>
-        </a>
-        <a href="">
           <p class="roboto-14-medium">Testimonial</p>
-        </a>
-        <a href="">
-          <p class="roboto-14-medium">Become a Mentor</p>
         </a>
       </div>
 

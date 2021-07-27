@@ -18,20 +18,20 @@
             <form action="{{ route('contact.post') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap Anda" name="nama">
+                    <label for="nama" class="roboto-18-medium">Nama Lengkap</label>
+                    <input type="text" class="form-control roboto-14-reguler" id="nama" placeholder="Masukkan Nama Lengkap Anda" name="nama" required>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda" name="email">
+                    <label for="email" class="roboto-18-medium">Email Address</label>
+                    <input type="email" class="form-control roboto-14-reguler" id="email" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email Anda" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">No Telepon</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No Telepon Anda" name="no_tlp">
+                    <label for="notelepon" class="roboto-18-medium">No Telepon</label>
+                    <input type="text" class="form-control roboto-14-reguler" id="notelepon" placeholder="Masukkan No Telepon Anda" name="no_tlp" required>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Pesan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda ..." name="pesan"></textarea>
+                    <label for="pesan" class="roboto-18-medium">Pesan</label>
+                    <textarea class="form-control roboto-14-reguler" id="pesan" rows="3" placeholder="Tulis Pesan Anda ..." name="pesan" required></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block poppins-18-bold">Send Message</button>
@@ -55,7 +55,8 @@
             <h6 class="card-subtitle mb-4 mt-2 poppins-18-semibold">Contact</h6>
             <div class="d-flex justify-content-center">
                 <div class="bd-highlight mx-n4">
-                    <a href="mailto:bagus.10118249@mahasiswa.unikom.ac.id" target="__blank" class="card-link">
+
+                    <a href="mailto:contact@team7mpp.my.id" target="__blank" class="card-link">
                         <span class="material-icons">
                             email
                         </span>
@@ -145,13 +146,7 @@
                     <p class="roboto-14-medium">Mentor</p>
                 </a>
                 <a href="">
-                    <p class="roboto-14-medium">Konsultasi</p>
-                </a>
-                <a href="">
                     <p class="roboto-14-medium">Testimonial</p>
-                </a>
-                <a href="">
-                    <p class="roboto-14-medium">Become a Mentor</p>
                 </a>
             </div>
 

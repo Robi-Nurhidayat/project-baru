@@ -171,17 +171,6 @@
 
     // ABOUT Animasi
 
-    // Animasi text about
-    document.querySelectorAll(".text-about").forEach((textAbout, i) => {
-      gsap.from(textAbout, {
-        duration: 1,
-        delay: i * 0.1,
-        y: 100,
-        opacity: 0,
-        ease: "circ.out"
-      });
-    });
-
     // Animasi text our team
     document.querySelectorAll(".team-text").forEach((teamText, i) => {
       gsap.from(teamText, {

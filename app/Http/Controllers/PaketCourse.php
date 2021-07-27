@@ -17,7 +17,7 @@ class PaketCourse extends Controller
     {
 
         $paket = Paket::all();
-        return view('paketCourse',['paket' => $paket]);
+        return view('paketCourse', ['paket' => $paket]);
     }
 
     /**
@@ -49,10 +49,14 @@ class PaketCourse extends Controller
      */
     public function show(Paket $paket)
     {
-        if($paket->id == 2){
-            echo "hallo 2";
-        }elseif($paket->id == 3){
-            echo "hallo 3";
+        if ($paket->id == 2) {
+            return view('ujiCoba');
+        } elseif ($paket->id == 3) {
+            return view('pelajar');
+        } elseif ($paket->id == 4) {
+            return view('paketTahunan');
+        } elseif ($paket->id == 5) {
+            return view('aksesSelamanya');
         }
     }
 

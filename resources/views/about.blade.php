@@ -4,8 +4,8 @@
 
 <div class="jumbotron mx-5 my-2 bg-light">
   <div class="container">
-    <h1 class="display-4 text-center header-poppins-48 text-about">ABOUT US</h1>
-    <p class="lead mt-4 roboto-18-medium text-about" style="width: 100%;">
+    <h1 class="display-4 text-center header-poppins-48">ABOUT US</h1>
+    <p class="lead mt-4 roboto-18-medium" style="width: 100%;">
       ITCourse adalah sebuah website belajar secara daring atau online dengan menggunkan metode pembelajaran tentang pemrograman berupa sebuah video belajar dan user dapat memilih video belajar yang diinginkan.</p>
   </div>
 </div>
@@ -270,13 +270,7 @@
           <p class="roboto-14-medium">Mentor</p>
         </a>
         <a href="">
-          <p class="roboto-14-medium">Konsultasi</p>
-        </a>
-        <a href="">
           <p class="roboto-14-medium">Testimonial</p>
-        </a>
-        <a href="">
-          <p class="roboto-14-medium">Become a Mentor</p>
         </a>
       </div>
 
