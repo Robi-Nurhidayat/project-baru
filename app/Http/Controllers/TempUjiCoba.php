@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Paket;
 use Illuminate\Http\Request;
 
-class PaketCourse extends Controller
+class TempUjiCoba extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,9 @@ class PaketCourse extends Controller
      */
     public function index()
     {
+        //
 
-        $paket = Paket::all();
-        return view('paketCourse', ['paket' => $paket]);
+        return view('sukses');
     }
 
     /**
@@ -47,17 +46,9 @@ class PaketCourse extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Paket $paket)
+    public function show($id)
     {
-        if ($paket->id == 2) {
-            return view('ujiCoba',['paket' => $paket]);
-        } elseif ($paket->id == 3) {
-            return view('pelajar',['paket' => $paket]);
-        } elseif ($paket->id == 4) {
-            return view('paketTahunan',['paket' => $paket]);
-        } elseif ($paket->id == 5) {
-            return view('aksesSelamanya',['paket' => $paket]);
-        }
+        //
     }
 
     /**

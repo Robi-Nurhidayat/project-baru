@@ -30,6 +30,8 @@ use App\Http\Controllers\PelajarBaruController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TampilPesanContact;
 use App\Http\Controllers\TampilUserController;
+use App\Http\Controllers\TempUjiCoba;
+use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -198,3 +200,14 @@ Route::get('/admin/pelajar_baru/delete/{user}',[PelajarBaruController::class,'de
 
 Route::get('/paket belajar', [PaketCourse::class, 'index'])->name('paket');
 Route::get('/paket belajar/{paket}', [PaketCourse::class, 'show'])->name('paket.show');
+
+
+// transaksi
+Route::post('/register/transaksi', [TransaksiController::class, 'store'])->name('transaksi');
+Route::get('/admin/transaksi',[TransaksiController::class, 'index'])->name('transaksi.admin');
+
+
+
+// temp transaksi
+
+Route::get('/register/transaksi/simpan',[TempUjiCoba::class, 'index'])->name('temp.ujicoba');

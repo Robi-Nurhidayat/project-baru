@@ -41,28 +41,29 @@
                 <div class="col card ml-3 mr-4 shadow-sm">
                     <div class="card-body">
                         <h4 class="card-title poppins-medium-24"> Profile User </h4>
-                        <form>
+                        <form action="{{ route('transaksi') }}" method="POST">
+                            @csrf
                             <div class="form-group">
                                 <label class="roboto-18-medium" for="nama">
                                     Nama Lengkap
                                 </label>
-                                <input type="text" class="form-control roboto-14-reguler" id="nama" placeholder="Masukkan Nama Lengkap Anda" required>
+                                <input type="text" class="form-control roboto-14-reguler" id="nama" placeholder="Masukkan Nama Lengkap Anda" required name="name">
                             </div>
                             <div class="form-group">
                                 <label class="roboto-18-medium" for="email">
                                     Email Address
                                 </label>
-                                <input type="email" class="form-control roboto-14-reguler" id="email" placeholder="Masukkan Alamat Email Anda" required>
+                                <input type="email" class="form-control roboto-14-reguler" id="email" placeholder="Masukkan Alamat Email Anda" required name="email">
                             </div>
                             <div class="form-group">
                                 <label class="roboto-18-medium" for="notelepon">
                                     No Telepon
                                 </label>
-                                <input type="text" class="form-control roboto-14-reguler" id="notelepon" placeholder="Masukkan No Telepon Anda" required>
+                                <input type="text" class="form-control roboto-14-reguler" id="notelepon" placeholder="Masukkan No Telepon Anda" required name="no_tlp">
                             </div>
                             <div class="form-group">
                                 <label class="roboto-18-medium" for="alamat">Alamat</label>
-                                <textarea class="form-control roboto-14-reguler" id="alamat" rows="5" placeholder="Tulis Alamat Anda..." required></textarea>
+                                <textarea class="form-control roboto-14-reguler" id="alamat" rows="5" placeholder="Tulis Alamat Anda..." required name="alamat"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block p-2 poppins-18-semibold">Simpan Data</button>
                         </form>
@@ -85,13 +86,13 @@
                             <tbody>
                                 <tr>
                                     <td class="roboto-14-reguler" scope="row" colspan="2">Paket Tahunan</td>
-                                    <td class="roboto-14-reguler text-right">800000</td>
-                                    <td class="roboto-14-reguler text-right">800000</td>
+                                    <td class="roboto-14-reguler text-right">Rp. {{ $paket->biaya }}</td>
+                                    <td class="roboto-14-reguler text-right">Rp. {{ $paket->biaya }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="2"></td>
                                     <td class="roboto-14-medium text-right">Total</td>
-                                    <td class="roboto-14-medium text-right">800000</td>
+                                    <td class="roboto-14-medium text-right">Rp. {{ $paket->biaya }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -100,7 +101,7 @@
                         <img src="https://www.bni.co.id/Portals/1/bni-logo-id.svg?ver=2017-04-27-170938-000" alt="BNI Logo">
                         <p class="mt-3 roboto-14-reguler">Robi Nurhidayat</p>
                         <p class="mt-n2 roboto-14-bold">193849901239</p>
-                        <button type="submit" class="btn btn-primary btn-block p-2 poppins-18-semibold">Selesaikan Pembayaran</button>
+                        <a href="{{ route('temp.ujicoba') }}" class="btn btn-primary btn-block p-2 poppins-18-semibold">Selesaikan Pembayaran</a>
                     </div>
                 </div>
             </div>

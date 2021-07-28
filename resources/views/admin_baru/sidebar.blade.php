@@ -64,6 +64,18 @@
             </div>
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('transaksi.admin') }}">
+            <div class="d-flex flex-row bd-highlight">
+                <div class="p-1 bd-highlight">
+                    <span class="material-icons">book</span>
+                </div>
+                <div class="p-1 bd-highlight">
+                    <span class="poppins-16-medium">Transaksi</span>
+                </div>
+            </div>
+        </a>
+    </li>
     {{-- <li class="nav-item">
         <a class="nav-link" href="{{ route('setting') }}">
             <div class="d-flex flex-row bd-highlight">

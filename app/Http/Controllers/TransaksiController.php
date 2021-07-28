@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Paket;
+use App\Models\Transaksi;
 use Illuminate\Http\Request;
 
-class PaketCourse extends Controller
+class TransaksiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,8 @@ class PaketCourse extends Controller
      */
     public function index()
     {
-
-        $paket = Paket::all();
-        return view('paketCourse', ['paket' => $paket]);
+        $transaksi = Transaksi::all();
+        return view('admin_baru.tampil_transaksi',['transaksi' => $transaksi]);
     }
 
     /**
@@ -36,9 +35,17 @@ class PaketCourse extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Transaksi $transaksi)
     {
-        //
+
+        $transaksi->name = $request->name;
+        $transaksi->email = $request->email;
+        $transaksi->no_tlp = $request->no_tlp;
+        $transaksi->alamat = $request->alamat;
+        $transaksi->save();
+
+        return redirect()->back();
+
     }
 
     /**
@@ -47,17 +54,9 @@ class PaketCourse extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Paket $paket)
+    public function show($id)
     {
-        if ($paket->id == 2) {
-            return view('ujiCoba',['paket' => $paket]);
-        } elseif ($paket->id == 3) {
-            return view('pelajar',['paket' => $paket]);
-        } elseif ($paket->id == 4) {
-            return view('paketTahunan',['paket' => $paket]);
-        } elseif ($paket->id == 5) {
-            return view('aksesSelamanya',['paket' => $paket]);
-        }
+        //
     }
 
     /**

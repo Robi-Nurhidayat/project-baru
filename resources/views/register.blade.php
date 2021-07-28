@@ -11,22 +11,22 @@
 
         <div class="form-group">
           <label for="username" class="roboto-18-medium">Username</label>
-          <input type="text" class="form-control roboto-14-reguler" id="username" name="name" placeholder="Masukkan Username Anda" required>
+          <input type="text" class="form-control roboto-14-reguler" id="username" name="name" placeholder="Masukkan Username Anda" required autocomplete="off">
         </div>
 
         <div class="form-group">
           <label for="email" class="roboto-18-medium">Email address</label>
-          <input type="email" class="form-control roboto-14-reguler" id="email" aria-describedby="emailHelp" name="email" placeholder="Masukkan Alamat Email Anda" required>
+          <input type="email" class="form-control roboto-14-reguler" id="email" aria-describedby="emailHelp" name="email" placeholder="Masukkan Alamat Email Anda" required autocomplete="off">
         </div>
 
         <div class="form-group">
           <label for="password" class="roboto-18-medium">Password</label>
-          <input type="password" class="form-control roboto-14-reguler" id="password" name="password" placeholder="Masukkan Kata Sandi" required>
+          <input type="password" class="form-control roboto-14-reguler" id="password" name="password" placeholder="Masukkan Kata Sandi" required autocomplete="off">
         </div>
 
         <div class="form-group">
           <label for="confirmpassword" class="roboto-18-medium">Confirm Password</label>
-          <input type="password" class="form-control roboto-14-reguler" id="confirmpassword" name="repeat" placeholder="Masukkan Konfirmasi Kata Sandi" required>
+          <input type="password" class="form-control roboto-14-reguler" id="confirmpassword" name="repeat" placeholder="Masukkan Konfirmasi Kata Sandi" required autocomplete="off">
         </div>
 
         <div class="form-group form-check">
