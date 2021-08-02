@@ -183,7 +183,7 @@ Route::delete('/admin/user/delete/{user}', [TampilUserController::class, 'destro
 
 Route::get('/halaman/user/setting/', [SettingController::class, 'index'])->name('setting');
 
-Route::put('/halaman/user/setting/update', [SettingController::class, 'update'])->name('setting.update');
+Route::put('/halaman/user/setting/update/{id}', [SettingController::class, 'update'])->name('setting.update');
 
 
 

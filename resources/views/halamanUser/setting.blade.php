@@ -7,43 +7,51 @@
         <h1>Settings</h1>
 
         <div class="">
-            <form action="{{ route('setting.update') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('setting.update',Auth::user()->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('put')
 
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Role</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" required name="hargaKelas"  value="{{ $user->role }}">
-                </div>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('put')
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" value="{{ Auth::user()->name }}">
+                      </div>
 
 
-              <div class="form-group">
-                  <label for="formGroupExampleInput">Nama</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput"  required name="namaKelas" value="{{ $user->name }}">
-              </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" value="{{ Auth::user()->email }}">
+                      </div>
 
-              <div class="form-group">
-                  <label for="formGroupExampleInput">Email</label>
-                  <input type="email" class="form-control" id="formGroupExampleInput" placeholder="" required name="namaPengajar"  value="{{ $user->email }}">
-              </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp" value="{{ Auth::user()->password }}">
+                      </div>
 
 
-              <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                  </div>
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="images" aria-describedby="inputGroupFileAddon01" value="{{ $user->images }}">
-                    <label class="custom-file-label" for="inputGroupFile01">Pilih Images</label>
-                  </div>
-                </div>
 
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <a href="{{ route('setting') }}" class="btn btn-secondary">Kembali</a>
-                </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Konfirmasi Password</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1" name="konfirmasi_password" aria-describedby="emailHelp">
+                      </div>
 
-            </form>
+                      <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" name="images" required value="{{ Auth::user()->images }}">
+                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        <div class="invalid-feedback">Pilih Gambar</div>
+                      </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                        <a href="{{ route('setting') }}" class="btn btn-secondary">Kembali</a>
+                    </div>
+                </form>
+
+
+
+
         </div>
     </div>
 </div>

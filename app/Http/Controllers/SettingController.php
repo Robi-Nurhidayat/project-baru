@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+// use Facade\FlareClient\Stacktrace\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 class SettingController extends Controller
 {
@@ -73,7 +76,32 @@ class SettingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $user_id = Auth::user()->id;
+        $user = User::findOrFail($user_id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+
+        if($request->hasFile('images')){
+
+            // $destination = 'img/users/'.$user->images;
+            // if(File::exist($destination)){
+            //     File::delete($destination);
+            // };
+            $file = $request->file('images');
+            $extension = $file->getClientOriginalExtension();
+            $fileName = time() . '.' . $extension;
+            $file->move('img/users/', $fileName);
+            $user->images = $fileName;
+        }
+
+        $user->update();
+
+        return redirect()->route('userHalaman');
+
+
+
     }
 
     /**

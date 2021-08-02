@@ -51,7 +51,7 @@
             </div>
         </a>
     </li>
-    {{-- <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="{{ route('setting') }}">
             <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </a>
-    </li> --}}
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}" onclick="return confirm('Apakah Anda Yakin?')">
             <div class="d-flex flex-row bd-highlight">
