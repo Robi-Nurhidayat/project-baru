@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Sign Up to ITCourse')
 
 @section('content')
 <div class="jumbotron bg-light m-auto signup-form" style="height: 70vh; width:80%; margin-top: 100px;">

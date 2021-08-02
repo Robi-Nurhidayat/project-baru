@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'React Native')
 
 @section('content')
 <div class="body-user">

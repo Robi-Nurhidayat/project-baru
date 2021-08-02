@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'Flutter')
 
 @section('content')
 <div class="body-user">

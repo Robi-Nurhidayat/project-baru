@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'Android Java')
 
 @section('content')
 <div class="body-user">

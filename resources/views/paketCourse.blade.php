@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
-  <title>Paket Course</title>
+  <title>Paket Course - ITCourse</title>
 </head>
 
 <body class="bg-light">

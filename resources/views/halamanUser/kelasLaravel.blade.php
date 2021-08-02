@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'Laravel')
 
 @section('content')
 <div class="body-user">
@@ -49,6 +49,6 @@
           <a href="https://code.visualstudio.com/download" target="__blank" class="download-card-tools">Download</a>
         </div>
 
-</div>
+      </div>
 
-@endsection
+      @endsection

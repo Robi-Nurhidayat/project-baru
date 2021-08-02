@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'Python')
 
 @section('content')
 <div class="body-user">

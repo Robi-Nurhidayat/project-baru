@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'Dashboard User')
 
 @section('content')
 <div class="body-user">

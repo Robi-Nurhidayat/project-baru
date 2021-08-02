@@ -23,7 +23,7 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  <title></title>
+  <title>@yield('title') - ITCourse</title>
 </head>
 
 <body class="body-page">

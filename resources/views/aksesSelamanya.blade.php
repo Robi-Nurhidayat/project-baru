@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
-    <title>Pembayaran - Paket Selamanya</title>
+    <title>Pembayaran · Paket Selamanya - ITCourse</title>
 </head>
 
 <body class="bg-light">

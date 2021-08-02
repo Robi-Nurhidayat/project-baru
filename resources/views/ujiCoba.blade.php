@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
-    <title>Pembayaran - Paket Ujicoba</title>
+    <title>Pembayaran · Paket Ujicoba - ITCourse</title>
 </head>
 
 <body class="bg-light">

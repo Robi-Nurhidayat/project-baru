@@ -1,5 +1,5 @@
 @extends('halamanUser.app')
-
+@section('title', 'HTML5')
 
 @section('content')
 <div class="body-user">

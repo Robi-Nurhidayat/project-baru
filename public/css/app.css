@@ -566,6 +566,17 @@ textarea {
 
 /* penutup ujicoba */
 
+/* Halaman Sukses Daftar */
+.success-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* penutup sukses daftar */
+
 /* login & sign up page style */
 .lupa-sandi a {
     text-decoration: none;
