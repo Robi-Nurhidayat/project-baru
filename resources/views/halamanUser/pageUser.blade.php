@@ -7,7 +7,7 @@
     <h2>Dashboard</h2>
     <div class="row mt-4">
       <div class="col-sm-3">
-        <a href="{{ route('piton') }}" class="">
+        <a href="{{ route('pythondasar') }}" class="">
           <div class="card card-kelas rounded-lg shadow-sm">
             <img src="{{ asset('img/course/python.jpg') }}" class="card-img-top img-profile" alt="...">
             <div class="card-body">

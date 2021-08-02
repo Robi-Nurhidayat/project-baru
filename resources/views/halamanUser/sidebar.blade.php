@@ -16,7 +16,7 @@
     </li>
     <li class="nav-item mt-3">
         <a class="nav-link" href="{{ route('user') }}">
-            <div class="d-flex flex-row bd-highlight menu-active">
+            <div class="d-flex flex-row bd-highlight menu-icon menu-active">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">home</span>
                 </div>
@@ -29,7 +29,7 @@
     {{-- <li class="nav-item">
         <a class="nav-link" href="#">
 
-            <div class="d-flex flex-row bd-highlight menu-active">
+            <div class="d-flex flex-row bd-highlight">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">school</span>
                 </div>
@@ -41,7 +41,7 @@
     </li> --}}
     <li class="nav-item">
         <a class="nav-link" href="">
-            <div class="d-flex flex-row bd-highlight">
+            <div class="d-flex flex-row bd-highlight menu-icon">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">book</span>
                 </div>
@@ -51,9 +51,9 @@
             </div>
         </a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item menu-icon">
         <a class="nav-link" href="{{ route('setting') }}">
-            <div class="d-flex flex-row bd-highlight">
+            <div class="d-flex flex-row bd-highlight menu-icon">
                 <div class="p-1 bd-highlight">
                     <span class="material-icons">settings</span>
                 </div>

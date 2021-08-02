@@ -556,7 +556,8 @@ h6 {
 /* ujicoba style */
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=file] {
     border: 1px solid var(--black-80);
 }
 
@@ -588,6 +589,10 @@ textarea {
 .admin-login-form a {
     text-decoration: none;
     color: var(--primary-100);
+}
+
+.pesan-kesalahan {
+    display: none;
 }
 
 /* penutup login */

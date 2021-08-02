@@ -35,11 +35,18 @@
           <label class="form-check-label roboto-14-reguler" for="setuju"> Saya Setuju <a href="">Syarat dan Ketentuan</a> & <a href="">Kebijakan Privasi</a></label>
         </div>
 
+        <div class="pesan-kesalahan">
+          <div class="alert alert-danger" role="alert">
+            Pastikan Kata Sandi dan Konfirmasi Kata Sandi Sama
+          </div>
+        </div>
+
         <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-block poppins-18-bold"> Sign Up</button>
+          <button type="submit" class="btn btn-primary btn-block poppins-18-bold" id="signUp-btn"> Sign Up</button>
         </div>
       </form>
     </div>
+
 
     <div class="col-md img-fluid mb-5">
       <img src="{{ asset('img/home/login.jpg') }}" alt="" style="width: 100%;">

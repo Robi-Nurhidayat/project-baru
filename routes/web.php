@@ -33,6 +33,8 @@ use App\Http\Controllers\TampilUserController;
 use App\Http\Controllers\TempUjiCoba;
 use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\listMateri\MateriPythonController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -124,7 +126,7 @@ Route::get('/halaman/user', [PageUserController::class, 'index'])->name('page.us
 
 Route::get('/halaman/user', [PageUserController::class, 'index'])->name('p');
 
-Route::get('halaman/page/user',[PageUserController::class, 'index'])->name('userHalaman');
+Route::get('halaman/page/user', [PageUserController::class, 'index'])->name('userHalaman');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
@@ -135,7 +137,6 @@ Route::get('halaman/user/kelas/{kelas}', [PageUserController::class, 'show'])->n
 
 
 Route::get('halaman/user', [PageUserController::class, 'index'])->name('user');
-Route::get('kelas/pyton', [KelasPythonController::class, 'index'])->name('piton');
 Route::get('kelas/pyton', [KelasPythonController::class, 'index'])->name('piton');
 Route::get('/kelas/flutter', [FlutterController::class, 'index'])->name('flutter');
 Route::get('/kelas/php', [PhpController::class, 'index'])->name('php');
@@ -150,8 +151,6 @@ Route::get('/kelas/html', [HtmlController::class, 'index'])->name('html');
 Route::get('/kelas/androidjava', [AndroidJavaController::class, 'index'])->name('androidjava');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact/sendMessage', [ContactController::class, 'store'])->name('contact.post');
-
-
 
 
 // login admin
@@ -190,7 +189,7 @@ Route::put('/halaman/user/setting/update/{id}', [SettingController::class, 'upda
 // tampil pelajar baru
 
 Route::get('/admin/pelajar/baru', [PelajarBaruController::class, 'index'])->name('pelajar_baru');
-Route::get('/admin/pelajar_baru/delete/{user}',[PelajarBaruController::class,'destroy'])->name('pelajar_baru.delete');
+Route::get('/admin/pelajar_baru/delete/{user}', [PelajarBaruController::class, 'destroy'])->name('pelajar_baru.delete');
 
 
 
@@ -204,10 +203,14 @@ Route::get('/paket belajar/{paket}', [PaketCourse::class, 'show'])->name('paket.
 
 // transaksi
 Route::post('/register/transaksi', [TransaksiController::class, 'store'])->name('transaksi');
-Route::get('/admin/transaksi',[TransaksiController::class, 'index'])->name('transaksi.admin');
+Route::get('/admin/transaksi', [TransaksiController::class, 'index'])->name('transaksi.admin');
 
 
 
 // temp transaksi
 
-Route::get('/register/transaksi/simpan',[TempUjiCoba::class, 'index'])->name('temp.ujicoba');
+Route::get('/register/transaksi/simpan', [TempUjiCoba::class, 'index'])->name('temp.ujicoba');
+
+
+// python
+Route::get('/kelas/pythondasar', [MateriPythonController::class, 'index'])->name('pythondasar');
