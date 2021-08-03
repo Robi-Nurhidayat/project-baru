@@ -23,18 +23,19 @@
 </div> --}}
 
 {{-- Hero --}}
-<div class="jumbotron hero mx-5 my-4">
-  <div class="row">
-    <div class="col-sm-5">
-      <h1 class="header-hero">Learn Programming Smart For Your Future</h1>
+<div class="jumbotron hero my-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="header-hero">Learn Programming Smart For Your Future</h1>
+        <p class="lead mb-4 roboto-24-reguler text-hero"></p>
 
-      <p class="lead mb-4 roboto-24-reguler text-hero"></p>
+        <a class="btn btn-primary poppins-18-bold btn-hero" href="{{ route('register') }}" role="button">Get started</a>
+      </div>
 
-      <a class="btn btn-primary poppins-18-bold btn-hero" href="{{ route('register') }}" role="button">Get started</a>
-    </div>
-
-    <div class="col-sm-6 ml-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-      <img class="hero-image" src="{{ asset('img/home/hero.jpg') }}" alt="">
+      <div class="col-sm ml-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <img class="hero-image" src="{{ asset('img/home/hero.jpg') }}" alt="">
+      </div>
     </div>
   </div>
 
@@ -44,123 +45,125 @@
 
 
 {{-- Card plan --}}
-<div class="jumbotron hero mx-5 my-4" id="pricing">
-  <div class="row">
-    <div class="col-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-      <div class="card p-2 card-pricing-main text-white shadow rounded" style="width: 20rem;">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Save More <br>
-            With Good Plan </h5>
-          <p class="card-text text-pricing">Kelas Premium mempunyai banyak benefits. Gabunglah Kelas Premium dengan metode belajar menggunakan studi kasus dan dapatkan sertifikat.</p>
-          <p>Untuk Awal yang baru coba memilih kelas gratis terlebih dahulu. Jika suka anda bisa upgrade ke kelas premium kapan saja.</p>
-        </div>
-        <img src="{{ URL('img/home/saveplan.jpg') }}" class="card-img-top px-3 pb-3" alt="...">
-      </div>
-    </div>
-
-    <div class="col-sm">
-      <h2>
-        Choose Your Plan
-      </h2>
-      <div class="card free-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-in-out">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Free</h5>
-          <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
-          <div class="d-flex flex-row bd-highlight my-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#2541D7"></box-icon>
-            </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-free-pricing-reguler">
-                Kesempatan belajar secara gratis
-              </p>
-            </div>
+<div class="jumbotron hero my-4" id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <div class="card p-2 card-pricing-main text-white shadow rounded" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Save More <br>
+              With Good Plan </h5>
+            <p class="card-text text-pricing">Kelas Premium mempunyai banyak benefits. Gabunglah Kelas Premium dengan metode belajar menggunakan studi kasus dan dapatkan sertifikat.</p>
+            <p>Untuk Awal yang baru coba memilih kelas gratis terlebih dahulu. Jika suka anda bisa upgrade ke kelas premium kapan saja.</p>
           </div>
-          <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#2541D7"></box-icon>
-            </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-free-pricing-reguler">
-                Akses selama nya
-              </p>
-            </div>
-          </div>
-          <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#2541D7"></box-icon>
-            </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-free-pricing-reguler">
-                Ilmu yang bermanfaat
-              </p>
-            </div>
-          </div>
-          <a href="{{ route('register') }}" class="btn btn-primary btn-block pricing-button-primary">Get Started</a>
+          <img src="{{ URL('img/home/saveplan.jpg') }}" class="card-img-top px-3 pb-3" alt="...">
         </div>
       </div>
-    </div>
 
-    <div class="col-sm">
-      <div class="card my-5 premium-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Premium</h5>
-          <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
-          <div class="d-flex flex-row bd-highlight my-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#FFFFFF"></box-icon>
+      <div class="col-sm">
+        <h2>
+          Choose Your Plan
+        </h2>
+        <div class="card free-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-in-out">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Free</h5>
+            <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
+            <div class="d-flex flex-row bd-highlight my-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#2541D7"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-free-pricing-reguler">
+                  Kesempatan belajar secara gratis
+                </p>
+              </div>
             </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-premium-pricing-reguler">
-                Kelas premium akses selamanya
-              </p>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#2541D7"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-free-pricing-reguler">
+                  Akses selama nya
+                </p>
+              </div>
             </div>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#2541D7"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-free-pricing-reguler">
+                  Ilmu yang bermanfaat
+                </p>
+              </div>
+            </div>
+            <a href="{{ route('register') }}" class="btn btn-primary btn-block pricing-button-primary">Get Started</a>
           </div>
+        </div>
+      </div>
 
-          <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#FFFFFF"></box-icon>
+      <div class="col-sm">
+        <div class="card my-5 premium-pricing-card shadow rounded " style="width: 20rem; height:89%;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Premium</h5>
+            <h6 class="roboto-pricing-medium">What You’ll Get?</h6>
+            <div class="d-flex flex-row bd-highlight my-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#FFFFFF"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-premium-pricing-reguler">
+                  Kelas premium akses selamanya
+                </p>
+              </div>
             </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-premium-pricing-reguler">
-                Sertifikat Kelas
-              </p>
-            </div>
-          </div>
 
-          <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#FFFFFF"></box-icon>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#FFFFFF"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-premium-pricing-reguler">
+                  Sertifikat Kelas
+                </p>
+              </div>
             </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-premium-pricing-reguler">
-                Bergabung dengan grup yang disediakan
-              </p>
-            </div>
-          </div>
 
-          <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#FFFFFF"></box-icon>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#FFFFFF"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-premium-pricing-reguler">
+                  Bergabung dengan grup yang disediakan
+                </p>
+              </div>
             </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-premium-pricing-reguler">
-                Bertanya langsung ke mentor
-              </p>
-            </div>
-          </div>
 
-          <div class="d-flex flex-row bd-highlight mb-4">
-            <div class="bd-highlight">
-              <box-icon name="check" color="#FFFFFF"></box-icon>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#FFFFFF"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-premium-pricing-reguler">
+                  Bertanya langsung ke mentor
+                </p>
+              </div>
             </div>
-            <div class="p-1 bd-highlight">
-              <p class="roboto-premium-pricing-reguler">
-                Ilmu yang bermanfaat
-              </p>
+
+            <div class="d-flex flex-row bd-highlight mb-4">
+              <div class="bd-highlight">
+                <box-icon name="check" color="#FFFFFF"></box-icon>
+              </div>
+              <div class="p-1 bd-highlight">
+                <p class="roboto-premium-pricing-reguler">
+                  Ilmu yang bermanfaat
+                </p>
+              </div>
             </div>
+            <a href="{{ route('register') }}" class="btn btn-course-white btn-block">Get Started</a>
           </div>
-          <a href="{{ route('register') }}" class="btn btn-course-white btn-block">Get Started</a>
         </div>
       </div>
     </div>
@@ -171,78 +174,80 @@
 
 {{-- card popular course --}}
 
-<div class="jumbotron hero mx-5 my-4">
-  <h4 class="popcourse-text">
-    Popular Course
-  </h4>
-  <p class="popcourse-text roboto-18-bold">
-    Top Course Demand in 2021
-  </p>
-  <div class="container ml-n3">
-    <div class="row">
-      <div class="col course-card">
-        <div class="card shadow-sm">
-          <img src="{{ URL('img/course/python.jpg') }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title roboto-18-medium">Python Basic</h5>
-            <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
-            <div class="d-flex flex-row bd-highlight">
-              <div class="bd-highlight">
-                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              </div>
-              <div class="px-1 bd-highlight">
-                <p class="card-text roboto-16-medium">4.0 (1000)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col course-card">
-        <div class="card shadow-sm">
-          <img src="{{ URL('img/course/js.jpg') }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title roboto-18-medium">Javascript</h5>
-            <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
-            <div class="d-flex flex-row bd-highlight">
-              <div class="bd-highlight">
-                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              </div>
-              <div class="px-1 bd-highlight">
-                <p class="card-text roboto-16-medium">4.0 (1000)</p>
+<div class="jumbotron hero my-4">
+  <div class="container">
+    <h4 class="popcourse-text">
+      Popular Course
+    </h4>
+    <p class="popcourse-text roboto-18-bold">
+      Top Course Demand in 2021
+    </p>
+    <div class="container ml-n3">
+      <div class="row">
+        <div class="col course-card">
+          <div class="card shadow-sm">
+            <img src="{{ URL('img/course/python.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title roboto-18-medium">Python Basic</h5>
+              <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
+              <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight">
+                  <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                </div>
+                <div class="px-1 bd-highlight">
+                  <p class="card-text roboto-16-medium">4.0 (1000)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col course-card">
-        <div class="card shadow-sm">
-          <img src="{{ URL('img/course/react.jpg') }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title roboto-18-medium">React JS</h5>
-            <p class="card-text roboto-14-reguler">Anu</p>
-            <div class="d-flex flex-row bd-highlight">
-              <div class="bd-highlight">
-                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              </div>
-              <div class="px-1 bd-highlight">
-                <p class="card-text roboto-16-medium">4.0 (1000)</p>
+        <div class="col course-card">
+          <div class="card shadow-sm">
+            <img src="{{ URL('img/course/js.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title roboto-18-medium">Javascript</h5>
+              <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
+              <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight">
+                  <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                </div>
+                <div class="px-1 bd-highlight">
+                  <p class="card-text roboto-16-medium">4.0 (1000)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col course-card">
-        <div class="card shadow-sm">
-          <img src="{{ URL('img/course/laravel.jpg') }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title roboto-18-medium">Laravel</h5>
-            <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
-            <div class="d-flex flex-row bd-highlight">
-              <div class="bd-highlight">
-                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+        <div class="col course-card">
+          <div class="card shadow-sm">
+            <img src="{{ URL('img/course/react.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title roboto-18-medium">React JS</h5>
+              <p class="card-text roboto-14-reguler">Anu</p>
+              <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight">
+                  <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                </div>
+                <div class="px-1 bd-highlight">
+                  <p class="card-text roboto-16-medium">4.0 (1000)</p>
+                </div>
               </div>
-              <div class="px-1 bd-highlight">
-                <p class="card-text roboto-16-medium">4.0 (1000)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col course-card">
+          <div class="card shadow-sm">
+            <img src="{{ URL('img/course/laravel.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title roboto-18-medium">Laravel</h5>
+              <p class="card-text roboto-14-reguler">Faqihza Mukhlis</p>
+              <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight">
+                  <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                </div>
+                <div class="px-1 bd-highlight">
+                  <p class="card-text roboto-16-medium">4.0 (1000)</p>
+                </div>
               </div>
             </div>
           </div>
@@ -250,8 +255,6 @@
       </div>
     </div>
   </div>
-</div>
-
 </div>
 
 {{-- end of popular course --}}
@@ -299,121 +302,119 @@
 
 {{-- testimonial students --}}
 
-
-<div class="jumbotron hero mx-5 my-4">
-  <div class="tetimonial-header mb-3">
-    <h4 class="testi-text">Testimonial Students</h4>
-    <p class="roboto-18-bold testi-text">Testimonial from students, What They Say? </p>
-  </div>
-
+<div class="jumbotron hero my-4">
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card ml-n3 mr-2 border-black testi-card">
-          <div class="card-body">
-            <div class="d-flex flex-row bd-highlight mb-3">
-              <div class="bd-highlight">
-                <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
-              </div>
-              <div class="py-2 px-3 bd-highlight">
-                <p class="roboto-14-bold mb-n1">Aldi Taher</p>
-                <p class="roboto-12-medium mt-1">Back-End Developer</p>
-              </div>
-            </div>
-            <p class="card-text testimonial-text roboto-14-reguler">
-              Asli Belajar disini asyik banget, mentornya ramah banget dibalas setiap bertanya
-            </p>
-            <p>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card ml-n3 mr-2 border-black testi-card">
-          <div class="card-body">
-            <div class="d-flex flex-row bd-highlight mb-3">
-              <div class="bd-highlight">
-                <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
-              </div>
-              <div class="py-2 px-3 bd-highlight">
-                <p class="roboto-14-bold mb-n1">Putra Dzaki</p>
-                <p class="roboto-12-medium mt-1">Flutter Developer</p>
-              </div>
-            </div>
-            <p class="card-text testimonial-text roboto-14-reguler">
-              Course Online paling recommended
-            </p>
-            <p>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card ml-n3 mr-2 border-black testi-card">
-          <div class="card-body">
-            <div class="d-flex flex-row bd-highlight mb-3">
-              <div class="bd-highlight">
-                <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
-              </div>
-              <div class="py-2 px-3 bd-highlight">
-                <p class="roboto-14-bold mb-n1">Indah Nuraini</p>
-                <p class="roboto-12-medium mt-1">Android Developer</p>
-              </div>
-            </div>
-            <p class="card-text testimonial-text roboto-14-reguler">
-              Tidak sia sia belajar disini, udah harganya terjangkau terus enak juga pengajarnya.
-            </p>
-            <p>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card ml-n3 mr-2 border-black testi-card">
-          <div class="card-body">
-            <div class="d-flex flex-row bd-highlight mb-3">
-              <div class="bd-highlight">
-                <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
-              </div>
-              <div class="py-2 px-3 bd-highlight">
-                <p class="roboto-14-bold mb-n1">Thoriq Maulana</p>
-                <p class="roboto-12-medium mt-1">UI Designer</p>
-              </div>
-            </div>
-            <p class="card-text testimonial-text roboto-14-reguler">
-              Belajar disini Seru, pengajarnya baik juga. Karena sudah berpengalaman jadinya mudah dipahami. Intinya top dah ITCourse
-            </p>
-            <p>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-              <box-icon type='solid' name='star' color="#FFC107"></box-icon>
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="tetimonial-header mb-3">
+      <h4 class="testi-text">Testimonial Students</h4>
+      <p class="roboto-18-bold testi-text">Testimonial from students, What They Say? </p>
     </div>
 
-  </div>
-</div>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card ml-n3 mr-2 border-black testi-card">
+            <div class="card-body">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="bd-highlight">
+                  <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
+                </div>
+                <div class="py-2 px-3 bd-highlight">
+                  <p class="roboto-14-bold mb-n1">Aldi Taher</p>
+                  <p class="roboto-12-medium mt-1">Back-End Developer</p>
+                </div>
+              </div>
+              <p class="card-text testimonial-text roboto-14-reguler">
+                Asli Belajar disini asyik banget, mentornya ramah banget dibalas setiap bertanya
+              </p>
+              <p>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card ml-n3 mr-2 border-black testi-card">
+            <div class="card-body">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="bd-highlight">
+                  <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
+                </div>
+                <div class="py-2 px-3 bd-highlight">
+                  <p class="roboto-14-bold mb-n1">Putra Dzaki</p>
+                  <p class="roboto-12-medium mt-1">Flutter Developer</p>
+                </div>
+              </div>
+              <p class="card-text testimonial-text roboto-14-reguler">
+                Course Online paling recommended
+              </p>
+              <p>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card ml-n3 mr-2 border-black testi-card">
+            <div class="card-body">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="bd-highlight">
+                  <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
+                </div>
+                <div class="py-2 px-3 bd-highlight">
+                  <p class="roboto-14-bold mb-n1">Indah Nuraini</p>
+                  <p class="roboto-12-medium mt-1">Android Developer</p>
+                </div>
+              </div>
+              <p class="card-text testimonial-text roboto-14-reguler">
+                Tidak sia sia belajar disini, udah harganya terjangkau terus enak juga pengajarnya.
+              </p>
+              <p>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card ml-n3 mr-2 border-black testi-card">
+            <div class="card-body">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="bd-highlight">
+                  <img src="{{ URL('img/users/user1.jpg') }}" alt="" class="rounded rounded-circle" style="max-width: 4rem; height:4rem;">
+                </div>
+                <div class="py-2 px-3 bd-highlight">
+                  <p class="roboto-14-bold mb-n1">Thoriq Maulana</p>
+                  <p class="roboto-12-medium mt-1">UI Designer</p>
+                </div>
+              </div>
+              <p class="card-text testimonial-text roboto-14-reguler">
+                Belajar disini Seru, pengajarnya baik juga. Karena sudah berpengalaman jadinya mudah dipahami. Intinya top dah ITCourse
+              </p>
+              <p>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+                <box-icon type='solid' name='star' color="#FFC107"></box-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
 </div>
 
 

@@ -2,6 +2,7 @@
 @section('title', 'Dashboard User')
 
 @section('content')
+
 <div class="body-user">
   <div class="container-sm">
     <h2>Dashboard</h2>
@@ -159,6 +160,7 @@
     </div>
   </div>
 </div>
+
 
 
 <!-- <div class="d-flex justify-content-around flex-wrap" style="width:70%; margin:0 auto;">

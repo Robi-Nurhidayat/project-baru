@@ -432,6 +432,7 @@ h6 {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 18px;
+    color: var(--primary-100)
 }
 
 .poppins-16-medium {
@@ -455,6 +456,24 @@ h6 {
 
 .menu-active {
     color: var(--primary-100);
+}
+
+.mobile-sidebar {
+    background-color: var(--white-primary);
+    box-shadow: 0px -1px var(--black-80);
+    z-index: 3;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.mobile-sidebar a {
+    color: var(--black-80);
+}
+
+.mobile-sidebar a:hover {
+    color: var(--black-80);
 }
 
 /* penutup sidebar */
@@ -638,6 +657,25 @@ textarea {
 
 }
 
+/* ketika diatas 1300 widthnya */
+
+@media only screen and (min-width: 1300px) {
+    .nav-item {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-sidebar {
+        display: contents;
+        position: fixed;
+        bottom: 0 !important;
+    }
+
+    .nav-sidebar {
+        display: none;
+    }
+}
 
 .contact-img {
     display: flex;
