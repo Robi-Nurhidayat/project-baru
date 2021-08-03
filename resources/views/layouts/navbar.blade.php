@@ -5,7 +5,7 @@
   <div class="container" id="navbarNav">
     <div class="row">
       <div class="col-sm">
-        <a class="navbar-brand logo-navbar" href="/">ITCourse</a>
+        <a class="navbar-brand logo-navbar" href="/">IT Course</a>
       </div>
 
       <div class="col-sm col-menu">

@@ -192,7 +192,7 @@ h6 {
     font-family: 'Poppins';
     font-weight: 900;
     font-size: 24px;
-    color: var(--success-100) !important;
+    color: var(--primary-100) !important;
 }
 
 .ul-button {
