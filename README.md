@@ -13,7 +13,7 @@ English: This project is aimed for the Big Final Project Assignment of the _Soft
 
 ## Preview
 
-## Figma Design
+### Figma Design
 
 <https://embed.figma.com/design/UHWZmtqrQPkLTo1km7YPZn/Design?node-id=221-2&embed-host=share>
 
