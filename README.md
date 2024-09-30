@@ -15,7 +15,7 @@ English: This project is aimed for the Big Final Project Assignment of the _Soft
 
 ## Figma Design
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/UHWZmtqrQPkLTo1km7YPZn/Design?node-id=221-2&embed-host=share" allowfullscreen></iframe>
+<https://embed.figma.com/design/UHWZmtqrQPkLTo1km7YPZn/Design?node-id=221-2&embed-host=share>
 
 ### Landing Page
 
