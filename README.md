@@ -1,3 +1,59 @@
+# Tugas Besar Aplikasi Course - Manajemen Proyek Perangkat Lunak | UNIKOM
+
+Indonesia: Projek ini ditujukan untuk Tugas Besar Mata Kuliah _Manajemen Proyek Perangkat Lunak_ dengan dosen pengampu Bapak **Irfan Maliki, S.T, M.T., CIPTM**.
+
+English: This project is aimed for the Big Final Project Assignment of the _Software Project Management_ course with the lecturer Mr. **Irfan Maliki, S.T, M.T., CIPTM**.
+
+## Team
+
+-   Akbar Saleh Alfian
+-   Bagus Perdana Yusuf
+-   Raden Fachrul Ramzi Muhammad
+-   Robi Nurhidayat
+
+## Preview
+
+## Figma Design
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/UHWZmtqrQPkLTo1km7YPZn/Design?node-id=221-2&embed-host=share" allowfullscreen></iframe>
+
+### Landing Page
+
+![Landing Page](docs/image/landing-page.jpg)
+
+## Technology stack & Tools
+
+**Program ini membutuhkan:**
+
+| Tech Stack & Tools | Version |
+| ------------------ | ------- |
+| AOS CSS            | Latest  |
+| Bootstrap CSS      | 4.0+    |
+| Boxicons           | 2.0.8+  |
+| Composer           | 2.2+    |
+| Figma              | Latest  |
+| Laravel            | 8.0+    |
+| MySQL              | 8.0+    |
+| PHP                | 7.4+    |
+| Visual Studio Code | Latest  |
+| WAMP / XAMPP       | Latest  |
+
+## Setup
+
+### Install Dependencies
+
+```shell
+composer update
+npm install
+```
+
+### Run Program
+
+```shell
+php artisan key:generate
+php artisan serve
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -11,13 +67,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -33,17 +89,17 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
 
 ## Contributing
 
