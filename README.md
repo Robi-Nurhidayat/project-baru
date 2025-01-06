@@ -28,7 +28,7 @@ English: This project is aimed for the Big Final Project Assignment of the _Soft
 | Tech Stack & Tools | Version |
 | ------------------ | ------- |
 | AOS CSS            | Latest  |
-| Bootstrap CSS      | 4.0+    |
+| Bootstrap CSS      | 4.6.0+  |
 | Boxicons           | 2.0.8+  |
 | Composer           | 2.2+    |
 | Figma              | Latest  |
