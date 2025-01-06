@@ -32,7 +32,9 @@ English: This project is aimed for the Big Final Project Assignment of the _Soft
 | Boxicons           | 2.0.8+  |
 | Composer           | 2.2+    |
 | Figma              | Latest  |
-| Laravel            | 8.0+    |
+| GSAP               | 3.7.1+  |
+| jQuery             | 3.5.1+  |
+| Laravel            | 8.49.0+ |
 | MySQL              | 8.0+    |
 | PHP                | 7.4+    |
 | Visual Studio Code | Latest  |

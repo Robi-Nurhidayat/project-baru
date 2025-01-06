@@ -2,7 +2,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="container" id="navbarNav">
+  <div class="container-fluid justify-content-center" id="navbarNav">
     <div class="row">
       <div class="col-sm">
         <a class="navbar-brand logo-navbar" href="/">IT Course</a>
@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <div class="col-sm-1 login-button">
+      <div class="col-sm login-button">
         <ul class="navbar-nav ul-button">
           <div class="p-2 bd-highlight btn-login">
             <li class="nav-item">
